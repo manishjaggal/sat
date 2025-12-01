@@ -1,0 +1,452 @@
+/* Settings Page Styles - Enhanced & Compact */
+.settings {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  margin-bottom: var(--space-md);
+}
+
+.header h1 {
+  font-size: 1.35rem;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.header p {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* Section */
+.section {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--paper-accent);
+  padding: var(--space-md);
+}
+
+.section h2 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+}
+
+.section h2 svg {
+  color: var(--ink-muted);
+}
+
+/* Profile Card */
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.avatarSection {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.avatar {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--teal-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.avatarBtn {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 22px;
+  height: 22px;
+  background: white;
+  border: 2px solid var(--paper-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-muted);
+  transition: all 0.2s;
+}
+
+.avatarBtn:hover {
+  background: var(--paper-warm);
+  color: var(--ink);
+}
+
+.avatarInfo strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.avatarInfo span {
+  font-size: 0.75rem;
+  color: var(--ink-subtle);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.inputGroup label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.inputGroup input,
+.inputGroup select {
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  border: 1px solid var(--paper-accent);
+  border-radius: var(--radius-md);
+  background: white;
+  color: var(--ink);
+  transition: all 0.2s;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 2px rgba(26, 95, 90, 0.1);
+}
+
+.saveBtn {
+  align-self: flex-start;
+  padding: 8px 18px;
+  background: var(--teal-deep);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.saveBtn:hover {
+  background: var(--teal);
+  transform: translateY(-1px);
+}
+
+/* Options List */
+.optionsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.optionItem,
+.linkItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--paper-accent);
+  gap: var(--space-sm);
+}
+
+.optionItem:last-child,
+.linkItem:last-child {
+  border-bottom: none;
+}
+
+.linkItem {
+  width: 100%;
+  text-align: left;
+  transition: opacity 0.2s;
+}
+
+.linkItem:hover {
+  opacity: 0.7;
+}
+
+.linkItem svg {
+  color: var(--ink-subtle);
+  flex-shrink: 0;
+}
+
+.optionInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.optionInfo strong {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.optionInfo span {
+  font-size: 0.7rem;
+  color: var(--ink-subtle);
+}
+
+/* Toggle */
+.toggle {
+  width: 40px;
+  height: 22px;
+  background: var(--paper-accent);
+  border-radius: var(--radius-full);
+  position: relative;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.toggle.active {
+  background: var(--teal);
+}
+
+.toggleHandle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-subtle);
+}
+
+.toggle.active .toggleHandle {
+  transform: translateX(18px);
+}
+
+/* Select Inline */
+.selectInline {
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  border: 1px solid var(--paper-accent);
+  border-radius: var(--radius-md);
+  background: white;
+  color: var(--ink);
+  flex-shrink: 0;
+  max-width: 140px;
+}
+
+/* Subscription Card */
+.subscriptionCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm);
+  background: linear-gradient(135deg, rgba(26, 95, 90, 0.08) 0%, rgba(45, 155, 146, 0.08) 100%);
+  border: 1px solid rgba(26, 95, 90, 0.15);
+  border-radius: var(--radius-md);
+}
+
+.planBadge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  background: var(--teal);
+  color: white;
+  border-radius: var(--radius-sm);
+  margin-bottom: 2px;
+}
+
+.planInfo strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.planInfo > span {
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+}
+
+.planActions {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.planBtn {
+  padding: 6px 12px;
+  background: var(--teal-deep);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.planBtn:hover {
+  background: var(--teal);
+}
+
+.planBtnSecondary {
+  padding: 6px 12px;
+  background: white;
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--paper-accent);
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.planBtnSecondary:hover {
+  background: var(--paper-warm);
+  color: var(--ink);
+}
+
+/* Danger Section */
+.dangerSection {
+  border-color: var(--coral-pale);
+}
+
+.dangerSection h2 {
+  color: var(--coral);
+}
+
+.dangerCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: white;
+  color: var(--coral);
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--coral);
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.deleteBtn:hover {
+  background: var(--coral);
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .subscriptionCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+  
+  .planActions {
+    width: 100%;
+  }
+  
+  .planBtn,
+  .planBtnSecondary {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .dangerCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+  
+  .deleteBtn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .selectInline {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.25rem;
+  }
+  
+  .section {
+    padding: var(--space-sm);
+  }
+  
+  .avatarSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .optionItem {
+    flex-wrap: wrap;
+  }
+  
+  .selectInline {
+    margin-top: 6px;
+    max-width: 100%;
+    flex: 1;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .saveBtn:hover,
+  .planBtn:hover,
+  .deleteBtn:hover {
+    transform: none;
+  }
+  
+  .toggle {
+    min-width: 44px;
+    min-height: 28px;
+  }
+  
+  .toggleHandle {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .toggle.active .toggleHandle {
+    transform: translateX(18px);
+  }
+}

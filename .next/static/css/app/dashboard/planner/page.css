@@ -1,0 +1,998 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/dashboard/planner/planner.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+/* Study Planner Styles - Enhanced & Compact */
+.planner_planner__lpuk0 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.planner_header___KF_F {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+  gap: var(--space-md);
+}
+
+.planner_header___KF_F h1 {
+  font-size: 1.35rem;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.planner_header___KF_F > div:first-child p {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+.planner_examCountdown__lS_7P {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 10px 14px;
+  background: linear-gradient(135deg, var(--coral-pale) 0%, rgba(199, 92, 76, 0.15) 100%);
+  border-radius: var(--radius-lg);
+}
+
+.planner_countdownNumber__uOryO {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--coral);
+  line-height: 1;
+}
+
+.planner_countdownLabel__a2QFI {
+  display: flex;
+  flex-direction: column;
+}
+
+.planner_countdownLabel__a2QFI span {
+  font-size: 0.65rem;
+  color: var(--ink-subtle);
+}
+
+.planner_countdownLabel__a2QFI strong {
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+
+/* Main Grid */
+.planner_mainGrid__LpHgX {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-gap: var(--space-md);
+  gap: var(--space-md);
+}
+
+/* Calendar */
+.planner_calendar__RLf_m {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--paper-accent);
+  padding: var(--space-md);
+}
+
+.planner_calendarHeader__4cXZl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+}
+
+.planner_calendarHeader__4cXZl h2 {
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.planner_navBtn__stiDw {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper-warm);
+  border-radius: var(--radius-sm);
+  color: var(--ink-muted);
+  transition: all 0.2s;
+}
+
+.planner_navBtn__stiDw:hover {
+  background: var(--paper-accent);
+  color: var(--ink);
+}
+
+.planner_calendarWeekdays__J8e_d {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2px;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+
+.planner_weekday__a7vus {
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--ink-subtle);
+  padding: 4px;
+}
+
+.planner_calendarGrid__KY_n_ {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2px;
+  gap: 2px;
+}
+
+.planner_emptyDay__WSRpd {
+  aspect-ratio: 1;
+}
+
+.planner_calendarDay__txJsZ {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: var(--paper-warm);
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+  cursor: pointer;
+  min-height: 36px;
+}
+
+.planner_calendarDay__txJsZ:hover {
+  background: var(--paper-accent);
+}
+
+.planner_calendarDay__txJsZ.planner_today__s8V0R {
+  background: rgba(26, 95, 90, 0.1);
+  border-color: var(--teal);
+}
+
+.planner_calendarDay__txJsZ.planner_selected__0CkP8 {
+  background: var(--teal-deep);
+  color: white;
+}
+
+.planner_calendarDay__txJsZ.planner_selected__0CkP8 .planner_completedIndicator__Ec5cO {
+  color: white;
+}
+
+.planner_dayNumber__NeUm_ {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.planner_taskIndicators__U_J1R {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+}
+
+.planner_taskDot__VT502 {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.planner_taskDot__VT502.planner_teal__YF0ES { background: var(--teal); }
+.planner_taskDot__VT502.planner_amber__OOQv5 { background: var(--amber); }
+.planner_taskDot__VT502.planner_coral__Sa2xL { background: var(--coral); }
+.planner_taskDot__VT502.planner_navy___lJ_Y { background: var(--navy); }
+.planner_taskDot__VT502.planner_purple__7qs1i { background: #9b59b6; }
+
+.planner_completedIndicator__Ec5cO {
+  color: var(--success);
+}
+
+.planner_calendarLegend__ZlMfF {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--paper-accent);
+}
+
+.planner_calendarLegend__ZlMfF span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.6rem;
+  color: var(--ink-subtle);
+}
+
+.planner_legendDot__Ywx7S {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.planner_legendDot__Ywx7S.planner_teal__YF0ES { background: var(--teal); }
+.planner_legendDot__Ywx7S.planner_amber__OOQv5 { background: var(--amber); }
+.planner_legendDot__Ywx7S.planner_coral__Sa2xL { background: var(--coral); }
+.planner_legendDot__Ywx7S.planner_navy___lJ_Y { background: var(--navy); }
+
+/* Selected Day */
+.planner_selectedDay__okptA {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--paper-accent);
+  padding: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.planner_selectedDayHeader__YXrZU {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.planner_selectedDayHeader__YXrZU h3 {
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.planner_addTaskBtn__Kw8_Z {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: var(--teal-deep);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.planner_addTaskBtn__Kw8_Z:hover {
+  background: var(--teal);
+}
+
+.planner_taskList__Vgx_U {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.planner_taskItem__liWYW {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 8px 10px;
+  background: var(--paper-warm);
+  border-radius: var(--radius-md);
+}
+
+.planner_taskItem__liWYW.planner_completed__HwBhu {
+  opacity: 0.5;
+}
+
+.planner_taskItem__liWYW.planner_completed__HwBhu .planner_taskInfo__DCoHC strong {
+  text-decoration: line-through;
+}
+
+.planner_taskCheck___l_hF {
+  color: var(--ink-subtle);
+  transition: color 0.2s;
+}
+
+.planner_taskCheck___l_hF:hover {
+  color: var(--success);
+}
+
+.planner_taskCheckEmpty__gwmsq {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--paper-accent);
+  border-radius: 50%;
+}
+
+.planner_taskCheckEmpty__gwmsq.planner_teal__YF0ES { border-color: var(--teal); }
+.planner_taskCheckEmpty__gwmsq.planner_amber__OOQv5 { border-color: var(--amber); }
+.planner_taskCheckEmpty__gwmsq.planner_coral__Sa2xL { border-color: var(--coral); }
+.planner_taskCheckEmpty__gwmsq.planner_navy___lJ_Y { border-color: var(--navy); }
+.planner_taskCheckEmpty__gwmsq.planner_purple__7qs1i { border-color: #9b59b6; }
+
+.planner_taskItem__liWYW .planner_taskCheck___l_hF svg {
+  color: var(--success);
+}
+
+.planner_taskInfo__DCoHC {
+  flex: 1 1;
+  min-width: 0;
+}
+
+.planner_taskInfo__DCoHC strong {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.planner_taskInfo__DCoHC span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.65rem;
+  color: var(--ink-subtle);
+}
+
+.planner_taskActions__VdK0N {
+  display: flex;
+  gap: 4px;
+}
+
+.planner_startBtn__jZ3q8 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--teal);
+  border-radius: var(--radius-sm);
+  color: white;
+  transition: all 0.2s;
+}
+
+.planner_startBtn__jZ3q8:hover {
+  background: var(--teal-deep);
+}
+
+.planner_taskAction__3viHd {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  color: var(--ink-subtle);
+  transition: all 0.2s;
+}
+
+.planner_taskAction__3viHd:hover {
+  background: var(--paper-accent);
+  color: var(--ink);
+}
+
+.planner_noTasks__4XTpY {
+  text-align: center;
+  padding: var(--space-md);
+  color: var(--ink-subtle);
+}
+
+.planner_noTasks__4XTpY svg {
+  margin-bottom: var(--space-xs);
+  opacity: 0.3;
+}
+
+.planner_noTasks__4XTpY p {
+  font-size: 0.8rem;
+}
+
+/* Quick Add */
+.planner_quickAdd__VZWpX {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--paper-accent);
+}
+
+.planner_quickAddLabel__Qhupu {
+  font-size: 0.65rem;
+  color: var(--ink-subtle);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.planner_quickAddBtns__92xaZ {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.planner_quickAddBtn__tCyFY {
+  padding: 4px 8px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+  background: var(--paper-warm);
+  color: var(--ink-muted);
+}
+
+.planner_quickAddBtn__tCyFY:hover {
+  transform: scale(1.02);
+}
+
+.planner_quickAddBtn__tCyFY.planner_teal__YF0ES:hover { background: rgba(26, 95, 90, 0.15); color: var(--teal-deep); }
+.planner_quickAddBtn__tCyFY.planner_amber__OOQv5:hover { background: var(--amber-pale); color: var(--amber); }
+.planner_quickAddBtn__tCyFY.planner_coral__Sa2xL:hover { background: var(--coral-pale); color: var(--coral); }
+.planner_quickAddBtn__tCyFY.planner_navy___lJ_Y:hover { background: rgba(44, 62, 80, 0.15); color: var(--navy); }
+
+/* Right Column */
+.planner_rightColumn__NDMBc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* Today's Progress */
+.planner_todayProgress__OwyWr {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--paper-accent);
+  padding: var(--space-md);
+  text-align: center;
+}
+
+.planner_todayProgress__OwyWr h2 {
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+}
+
+.planner_progressCircle__VCAUo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto var(--space-sm);
+}
+
+.planner_progressCircle__VCAUo svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.planner_progressBg__42tCp {
+  fill: none;
+  stroke: var(--paper-accent);
+  stroke-width: 8;
+}
+
+.planner_progressFill__VjcUb {
+  fill: none;
+  stroke: var(--teal);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s;
+}
+
+.planner_progressText__XZcDy {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.planner_progressText__XZcDy strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.planner_progressText__XZcDy span {
+  font-size: 0.65rem;
+  color: var(--ink-subtle);
+}
+
+.planner_todayStats__5AbDp {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.planner_todayStat__3w3dV {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+}
+
+.planner_todayStat__3w3dV svg {
+  color: var(--ink-subtle);
+}
+
+/* Weekly Stats */
+.planner_weeklyStats__zw_ej {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--paper-accent);
+  padding: var(--space-md);
+}
+
+.planner_weeklyStats__zw_ej h2 {
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+}
+
+.planner_statsGrid__gnaG8 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px;
+  gap: 6px;
+}
+
+.planner_statCard__Cr23x {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--space-sm);
+  background: var(--paper-warm);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.planner_statCard__Cr23x svg {
+  color: var(--teal);
+}
+
+.planner_statCard__Cr23x strong {
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.planner_statCard__Cr23x span {
+  font-size: 0.6rem;
+  color: var(--ink-subtle);
+}
+
+/* Pomodoro */
+.planner_pomodoroSection__8DQaq {
+  background: linear-gradient(135deg, rgba(26, 95, 90, 0.08) 0%, rgba(45, 155, 146, 0.08) 100%);
+  border: 1px solid rgba(26, 95, 90, 0.15);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.planner_pomodoroHeader__b9GzL {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+  color: var(--teal-deep);
+}
+
+.planner_pomodoroHeader__b9GzL h2 {
+  font-size: 0.9rem;
+}
+
+.planner_pomodoroBtn__bosCl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 10px;
+  background: var(--teal-deep);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.planner_pomodoroBtn__bosCl:hover {
+  background: var(--teal);
+}
+
+/* Reminders */
+.planner_reminders__Zb0Hx {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--paper-accent);
+  padding: var(--space-md);
+}
+
+.planner_reminderHeader__qJ0_7 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.planner_reminderHeader__qJ0_7 svg {
+  color: var(--amber);
+}
+
+.planner_reminderHeader__qJ0_7 h2 {
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.planner_reminderToggle__XDB_V {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 6px 0;
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  cursor: pointer;
+}
+
+.planner_reminderToggle__XDB_V input {
+  display: none;
+}
+
+.planner_toggle__dPKgG {
+  width: 36px;
+  height: 20px;
+  background: var(--paper-accent);
+  border-radius: var(--radius-full);
+  position: relative;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.planner_toggle__dPKgG::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.planner_reminderToggle__XDB_V input:checked + .planner_toggle__dPKgG {
+  background: var(--teal);
+}
+
+.planner_reminderToggle__XDB_V input:checked + .planner_toggle__dPKgG::after {
+  transform: translateX(16px);
+}
+
+/* Modal */
+.planner_modalOverlay__0m_XP {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: var(--space-md);
+}
+
+.planner_modal__c8vdH {
+  width: 100%;
+  max-width: 360px;
+  background: white;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.planner_modalHeader__VXVS5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--paper-accent);
+}
+
+.planner_modalHeader__VXVS5 h3 {
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.planner_modalClose__JE6aL {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper-warm);
+  border-radius: var(--radius-sm);
+  color: var(--ink-muted);
+  transition: all 0.2s;
+}
+
+.planner_modalClose__JE6aL:hover {
+  background: var(--paper-accent);
+  color: var(--ink);
+}
+
+.planner_modalBody__ViPgt {
+  padding: var(--space-md);
+}
+
+.planner_inputGroup__jbVP1 {
+  margin-bottom: var(--space-sm);
+}
+
+.planner_inputGroup__jbVP1 label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.planner_inputGroup__jbVP1 input,
+.planner_inputGroup__jbVP1 select {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.85rem;
+  border: 1px solid var(--paper-accent);
+  border-radius: var(--radius-md);
+  background: white;
+  color: var(--ink);
+  transition: all 0.2s;
+}
+
+.planner_inputGroup__jbVP1 input:focus,
+.planner_inputGroup__jbVP1 select:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.planner_inputRow__jNH1G {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--space-sm);
+  gap: var(--space-sm);
+}
+
+.planner_modalFooter__47qAx {
+  display: flex;
+  gap: var(--space-sm);
+  padding: 0 var(--space-md) var(--space-md);
+}
+
+.planner_cancelBtn__LM_qO {
+  flex: 1 1;
+  padding: 10px;
+  background: var(--paper-warm);
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.planner_cancelBtn__LM_qO:hover {
+  background: var(--paper-accent);
+}
+
+.planner_saveBtn__WrOUi {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  background: var(--teal-deep);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+
+.planner_saveBtn__WrOUi:hover {
+  background: var(--teal);
+}
+
+/* Timer Modal */
+.planner_timerOverlay__dv1_2 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.planner_timerModal__WLCme {
+  text-align: center;
+  color: white;
+  padding: var(--space-xl);
+  position: relative;
+}
+
+.planner_timerClose__b_P7o {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s;
+}
+
+.planner_timerClose__b_P7o:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.planner_timerTask__Fjrfy {
+  margin-bottom: var(--space-lg);
+}
+
+.planner_timerTaskBadge__SgoZ4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  margin-bottom: var(--space-xs);
+  text-transform: capitalize;
+}
+
+.planner_timerTask__Fjrfy h3 {
+  font-size: 1.1rem;
+}
+
+.planner_timerDisplay__p7spx {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto var(--space-lg);
+}
+
+.planner_timerRing__9_Het {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.planner_timerBg__7Txbs {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 6;
+}
+
+.planner_timerProgress__FA_gw {
+  fill: none;
+  stroke: var(--teal);
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s linear;
+}
+
+.planner_timerTime__qFDD0 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.planner_timerControls__I5KeB {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.planner_timerControlBtn__T_0N1 {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s;
+}
+
+.planner_timerControlBtn__T_0N1:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.planner_timerPlayBtn__JX4zv {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--teal);
+  border-radius: 50%;
+  color: white;
+  transition: all 0.2s;
+}
+
+.planner_timerPlayBtn__JX4zv:hover {
+  background: var(--teal-light);
+  transform: scale(1.05);
+}
+
+.planner_timerPlayBtn__JX4zv.planner_paused__VFtna {
+  background: var(--amber);
+}
+
+.planner_timerTip__Saa7Z {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .planner_mainGrid__LpHgX {
+    grid-template-columns: 1fr;
+  }
+
+  .planner_header___KF_F {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .planner_examCountdown__lS_7P {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .planner_header___KF_F h1 {
+    font-size: 1.25rem;
+  }
+
+  .planner_calendarLegend__ZlMfF {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .planner_statsGrid__gnaG8 {
+    grid-template-columns: 1fr;
+  }
+
+  .planner_inputRow__jNH1G {
+    grid-template-columns: 1fr;
+  }
+
+  .planner_timerDisplay__p7spx {
+    width: 180px;
+    height: 180px;
+  }
+
+  .planner_timerTime__qFDD0 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Touch optimizations */
+@media (hover: none) {
+  .planner_calendarDay__txJsZ {
+    min-height: 44px;
+  }
+
+  .planner_taskAction__3viHd,
+  .planner_startBtn__jZ3q8 {
+    width: 32px;
+    height: 32px;
+  }
+}
+

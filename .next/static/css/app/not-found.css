@@ -1,0 +1,168 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/not-found.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.not-found_notFound__7UiU5 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+}
+
+.not-found_content__eXtMa {
+  text-align: center;
+  max-width: 500px;
+}
+
+.not-found_illustration__4XoSW {
+  position: relative;
+  margin-bottom: var(--space-xl);
+}
+
+.not-found_code__7e29u {
+  font-family: var(--font-display);
+  font-size: 8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-deep) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  opacity: 0.15;
+}
+
+.not-found_magnifier__FTbhE {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  box-shadow: var(--shadow-lg);
+  color: var(--teal);
+}
+
+.not-found_content__eXtMa h1 {
+  font-size: 2rem;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+}
+
+.not-found_content__eXtMa > p {
+  font-size: 1rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+}
+
+.not-found_actions__iVU5n {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-bottom: var(--space-xl);
+}
+
+.not-found_primaryBtn__W_V_J,
+.not-found_secondaryBtn__BZ6a3 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  transition: all 0.2s;
+}
+
+.not-found_primaryBtn__W_V_J {
+  background: var(--teal-deep);
+  color: white;
+}
+
+.not-found_primaryBtn__W_V_J:hover {
+  background: var(--teal);
+  transform: translateY(-2px);
+}
+
+.not-found_secondaryBtn__BZ6a3 {
+  background: white;
+  color: var(--ink-muted);
+  border: 1px solid var(--paper-accent);
+}
+
+.not-found_secondaryBtn__BZ6a3:hover {
+  background: var(--paper-warm);
+  color: var(--ink);
+}
+
+.not-found_suggestions__ATP52 {
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--paper-accent);
+}
+
+.not-found_suggestions__ATP52 h3 {
+  font-size: 0.85rem;
+  color: var(--ink-subtle);
+  margin-bottom: var(--space-md);
+}
+
+.not-found_links__auMg0 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.not-found_links__auMg0 a {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid var(--paper-accent);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  transition: all 0.2s;
+}
+
+.not-found_links__auMg0 a:hover {
+  background: var(--teal-deep);
+  border-color: var(--teal-deep);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .not-found_code__7e29u {
+    font-size: 5rem;
+  }
+  
+  .not-found_magnifier__FTbhE {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .not-found_magnifier__FTbhE svg {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .not-found_content__eXtMa h1 {
+    font-size: 1.5rem;
+  }
+  
+  .not-found_actions__iVU5n {
+    flex-direction: column;
+  }
+  
+  .not-found_primaryBtn__W_V_J,
+  .not-found_secondaryBtn__BZ6a3 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+

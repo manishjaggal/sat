@@ -1,0 +1,9 @@
+{
+  "/dashboard/planner/page": "app/dashboard/planner/page.js",
+  "/dashboard/study/page": "app/dashboard/study/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/practice/page": "app/dashboard/practice/page.js",
+  "/dashboard/progress/page": "app/dashboard/progress/page.js",
+  "/dashboard/flashcards/page": "app/dashboard/flashcards/page.js",
+  "/dashboard/challenge/page": "app/dashboard/challenge/page.js"
+}

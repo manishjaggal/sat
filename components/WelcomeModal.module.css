@@ -1,0 +1,223 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--space-md);
+}
+
+.modal {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.skipBtn {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: var(--paper-warm);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  transition: all 0.2s;
+}
+
+.skipBtn:hover {
+  background: var(--paper-accent);
+  color: var(--ink);
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: var(--space-xl);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--paper-accent);
+  transition: all 0.3s;
+}
+
+.dot.active {
+  width: 24px;
+  border-radius: var(--radius-full);
+  background: var(--teal);
+}
+
+.dot.completed {
+  background: var(--teal);
+}
+
+.stepContent {
+  text-align: center;
+  padding: var(--space-lg) 0;
+}
+
+.iconWrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper-warm);
+  border-radius: 50%;
+  color: var(--teal);
+}
+
+.iconWrapper.teal { background: rgba(26, 95, 90, 0.1); color: var(--teal-deep); }
+.iconWrapper.amber { background: var(--amber-pale); color: var(--amber); }
+.iconWrapper.coral { background: var(--coral-pale); color: var(--coral); }
+.iconWrapper.navy { background: rgba(44, 62, 80, 0.1); color: var(--navy); }
+
+.stepContent h2 {
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+}
+
+.stepContent p {
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.setupContent {
+  text-align: center;
+  padding: var(--space-md) 0;
+}
+
+.setupContent h2 {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin-bottom: var(--space-lg);
+}
+
+.setupSection {
+  margin-bottom: var(--space-lg);
+  text-align: left;
+}
+
+.setupSection label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+}
+
+.optionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.optionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px;
+  background: var(--paper-warm);
+  border: 2px solid transparent;
+  border-radius: var(--radius-lg);
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  transition: all 0.2s;
+}
+
+.optionBtn:hover {
+  border-color: var(--paper-accent);
+  background: white;
+}
+
+.optionBtn.selected {
+  background: rgba(26, 95, 90, 0.1);
+  border-color: var(--teal);
+  color: var(--teal-deep);
+}
+
+.actions {
+  margin-top: var(--space-lg);
+}
+
+.nextBtn,
+.startBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background: var(--teal-deep);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  transition: all 0.2s;
+}
+
+.nextBtn:hover,
+.startBtn:hover {
+  background: var(--teal);
+  transform: translateY(-1px);
+}
+
+.startBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.startBtn {
+  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 100%);
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: var(--space-lg);
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .iconWrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .iconWrapper svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .stepContent h2 {
+    font-size: 1.25rem;
+  }
+
+  .stepContent p {
+    font-size: 0.9rem;
+  }
+
+  .optionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

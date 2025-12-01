@@ -1,0 +1,129 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/dashboard/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/page.css",
+      "static/chunks/app/dashboard/page.js"
+    ],
+    "/dashboard/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/layout.css",
+      "static/chunks/app/dashboard/layout.js"
+    ],
+    "/dashboard/study/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/study/page.css",
+      "static/chunks/app/dashboard/study/page.js"
+    ],
+    "/dashboard/practice/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/practice/page.css",
+      "static/chunks/app/dashboard/practice/page.js"
+    ],
+    "/dashboard/progress/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/progress/page.css",
+      "static/chunks/app/dashboard/progress/page.js"
+    ],
+    "/dashboard/settings/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/settings/page.css",
+      "static/chunks/app/dashboard/settings/page.js"
+    ],
+    "/dashboard/practice/[testId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/practice/[testId]/page.css",
+      "static/chunks/app/dashboard/practice/[testId]/page.js"
+    ],
+    "/dashboard/practice/quick/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/practice/quick/page.css",
+      "static/chunks/app/dashboard/practice/quick/page.js"
+    ],
+    "/dashboard/study/[subject]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/study/[subject]/page.css",
+      "static/chunks/app/dashboard/study/[subject]/page.js"
+    ],
+    "/dashboard/flashcards/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/flashcards/page.css",
+      "static/chunks/app/dashboard/flashcards/page.js"
+    ],
+    "/dashboard/challenge/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/challenge/page.css",
+      "static/chunks/app/dashboard/challenge/page.js"
+    ],
+    "/dashboard/planner/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/planner/page.css",
+      "static/chunks/app/dashboard/planner/page.js"
+    ],
+    "/dashboard/bookmarks/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/bookmarks/page.css",
+      "static/chunks/app/dashboard/bookmarks/page.js"
+    ],
+    "/dashboard/notes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/notes/page.css",
+      "static/chunks/app/dashboard/notes/page.js"
+    ],
+    "/dashboard/achievements/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/achievements/page.css",
+      "static/chunks/app/dashboard/achievements/page.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/not-found.css",
+      "static/chunks/app/not-found.js"
+    ],
+    "/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/loading.css",
+      "static/chunks/app/loading.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
+    ],
+    "/dashboard/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dashboard/loading.css",
+      "static/chunks/app/dashboard/loading.js"
+    ]
+  }
+}
