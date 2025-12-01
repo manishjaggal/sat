@@ -6,7 +6,7 @@ import {
   Calendar, Clock, Target, BookOpen, CheckCircle2,
   ChevronLeft, ChevronRight, Plus, Edit3, Trash2,
   Bell, Award, TrendingUp, Zap, X, Play, Pause,
-  RotateCcw, Timer, Beaker, MessageSquare, Check
+  RotateCcw, Timer, Calculator, Check
 } from 'lucide-react'
 import styles from './planner.module.css'
 
@@ -17,39 +17,37 @@ const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
 interface StudyTask {
   id: string;
   title: string;
-  subject: 'reading' | 'math' | 'science' | 'english' | 'practice';
+  subject: 'reading-writing' | 'math' | 'practice';
   duration: number;
   completed: boolean;
   date: string;
 }
 
 const subjectOptions = [
-  { value: 'reading', label: 'Reading', icon: <BookOpen size={16} /> },
-  { value: 'math', label: 'Mathematics', icon: <Target size={16} /> },
-  { value: 'science', label: 'Science', icon: <Beaker size={16} /> },
-  { value: 'english', label: 'English', icon: <MessageSquare size={16} /> },
+  { value: 'reading-writing', label: 'Reading & Writing', icon: <BookOpen size={16} /> },
+  { value: 'math', label: 'Math', icon: <Calculator size={16} /> },
   { value: 'practice', label: 'Practice Test', icon: <Award size={16} /> },
 ]
 
 const taskTemplates = [
-  { title: 'Reading Comprehension', subject: 'reading', duration: 30 },
+  { title: 'Reading Comprehension', subject: 'reading-writing', duration: 30 },
   { title: 'Math Practice', subject: 'math', duration: 45 },
-  { title: 'Science Review', subject: 'science', duration: 40 },
-  { title: 'Grammar & Vocabulary', subject: 'english', duration: 25 },
+  { title: 'Grammar Review', subject: 'reading-writing', duration: 25 },
+  { title: 'Algebra Problems', subject: 'math', duration: 30 },
   { title: 'Full Practice Test', subject: 'practice', duration: 120 },
-  { title: 'Flashcard Review', subject: 'reading', duration: 15 },
-  { title: 'Weak Areas Focus', subject: 'math', duration: 30 },
+  { title: 'Vocabulary Review', subject: 'reading-writing', duration: 20 },
+  { title: 'Geometry Practice', subject: 'math', duration: 35 },
 ]
 
 const initialTasks: StudyTask[] = [
-  { id: '1', title: 'Reading Comprehension', subject: 'reading', duration: 30, completed: true, date: '2024-12-01' },
+  { id: '1', title: 'Reading Comprehension', subject: 'reading-writing', duration: 30, completed: true, date: '2024-12-01' },
   { id: '2', title: 'Math Practice', subject: 'math', duration: 45, completed: true, date: '2024-12-01' },
-  { id: '3', title: 'Science: Anatomy', subject: 'science', duration: 40, completed: false, date: '2024-12-01' },
-  { id: '4', title: 'Grammar Review', subject: 'english', duration: 25, completed: false, date: '2024-12-01' },
+  { id: '3', title: 'Vocabulary in Context', subject: 'reading-writing', duration: 25, completed: false, date: '2024-12-01' },
+  { id: '4', title: 'Quadratic Equations', subject: 'math', duration: 35, completed: false, date: '2024-12-01' },
   { id: '5', title: 'Full Practice Test', subject: 'practice', duration: 120, completed: false, date: '2024-12-02' },
   { id: '6', title: 'Review Test Results', subject: 'practice', duration: 30, completed: false, date: '2024-12-03' },
-  { id: '7', title: 'Math: Ratios', subject: 'math', duration: 35, completed: false, date: '2024-12-03' },
-  { id: '8', title: 'Reading: Key Ideas', subject: 'reading', duration: 30, completed: false, date: '2024-12-04' },
+  { id: '7', title: 'Algebra Review', subject: 'math', duration: 35, completed: false, date: '2024-12-03' },
+  { id: '8', title: 'Grammar & Conventions', subject: 'reading-writing', duration: 30, completed: false, date: '2024-12-04' },
 ]
 
 export default function PlannerPage() {
@@ -62,12 +60,12 @@ export default function PlannerPage() {
   const [timerTask, setTimerTask] = useState<StudyTask | null>(null)
   const [timeRemaining, setTimeRemaining] = useState(0)
   const [isTimerRunning, setIsTimerRunning] = useState(false)
-  const [examDate] = useState('2025-01-15')
+  const [examDate] = useState('2025-03-08') // SAT test date
   
   // New task form state
   const [newTask, setNewTask] = useState({
     title: '',
-    subject: 'reading' as StudyTask['subject'],
+    subject: 'reading-writing' as StudyTask['subject'],
     duration: 30
   })
 
@@ -119,10 +117,8 @@ export default function PlannerPage() {
 
   const getSubjectColor = (subject: string) => {
     switch (subject) {
-      case 'reading': return 'teal'
-      case 'math': return 'amber'
-      case 'science': return 'coral'
-      case 'english': return 'navy'
+      case 'reading-writing': return 'coral'
+      case 'math': return 'teal'
       case 'practice': return 'purple'
       default: return 'teal'
     }
@@ -130,10 +126,8 @@ export default function PlannerPage() {
 
   const getSubjectIcon = (subject: string) => {
     switch (subject) {
-      case 'reading': return <BookOpen size={16} />
-      case 'math': return <Target size={16} />
-      case 'science': return <Beaker size={16} />
-      case 'english': return <MessageSquare size={16} />
+      case 'reading-writing': return <BookOpen size={16} />
+      case 'math': return <Calculator size={16} />
       case 'practice': return <Award size={16} />
       default: return <BookOpen size={16} />
     }
@@ -152,7 +146,7 @@ export default function PlannerPage() {
     }
     
     setTasks([...tasks, task])
-    setNewTask({ title: '', subject: 'reading', duration: 30 })
+    setNewTask({ title: '', subject: 'reading-writing', duration: 30 })
     setShowAddModal(false)
   }
 
@@ -267,13 +261,13 @@ export default function PlannerPage() {
       >
         <div>
           <h1>Study Planner</h1>
-          <p>Plan and track your study sessions</p>
+          <p>Plan and track your SAT study sessions</p>
         </div>
         <div className={styles.examCountdown}>
           <div className={styles.countdownNumber}>{daysUntilExam}</div>
           <div className={styles.countdownLabel}>
             <span>days to</span>
-            <strong>GED Exam</strong>
+            <strong>SAT Exam</strong>
           </div>
         </div>
       </motion.div>
@@ -308,10 +302,9 @@ export default function PlannerPage() {
             </div>
 
             <div className={styles.calendarLegend}>
-              <span><span className={`${styles.legendDot} ${styles.teal}`} /> Read</span>
-              <span><span className={`${styles.legendDot} ${styles.amber}`} /> Math</span>
-              <span><span className={`${styles.legendDot} ${styles.coral}`} /> Sci</span>
-              <span><span className={`${styles.legendDot} ${styles.navy}`} /> Eng</span>
+              <span><span className={`${styles.legendDot} ${styles.coral}`} /> R&W</span>
+              <span><span className={`${styles.legendDot} ${styles.teal}`} /> Math</span>
+              <span><span className={`${styles.legendDot} ${styles.purple}`} /> Test</span>
             </div>
           </motion.section>
 
@@ -419,7 +412,7 @@ export default function PlannerPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <h2>Today's Progress</h2>
+            <h2>Today&apos;s Progress</h2>
             <div className={styles.progressCircle}>
               <svg viewBox="0 0 100 100">
                 <circle className={styles.progressBg} cx="50" cy="50" r="40" />
@@ -666,7 +659,7 @@ export default function PlannerPage() {
                 <div className={styles.timerTask}>
                   <span className={`${styles.timerTaskBadge} ${styles[getSubjectColor(timerTask.subject)]}`}>
                     {getSubjectIcon(timerTask.subject)}
-                    {timerTask.subject}
+                    {timerTask.subject === 'reading-writing' ? 'R&W' : timerTask.subject}
                   </span>
                   <h3>{timerTask.title}</h3>
                 </div>

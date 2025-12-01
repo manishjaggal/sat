@@ -34,21 +34,17 @@ export default function PracticeTestPage() {
     let time = 0
 
     if (testId.startsWith('full-')) {
-      // Full practice test - all subjects
-      testQuestions = getRandomQuestions(50) // Shortened for demo
-      time = 60 * 60 // 60 minutes
-    } else if (testId.startsWith('reading')) {
-      testQuestions = getRandomQuestions(15, 'reading')
-      time = 20 * 60
+      // Full SAT practice test - both sections
+      testQuestions = getRandomQuestions(44) // 22 per section
+      time = 64 * 60 // 64 minutes (SAT R&W time)
+    } else if (testId.startsWith('rw') || testId.startsWith('reading')) {
+      // Reading & Writing section
+      testQuestions = getRandomQuestions(27, 'reading-writing')
+      time = 32 * 60 // 32 minutes per module
     } else if (testId.startsWith('math')) {
-      testQuestions = getRandomQuestions(15, 'math')
-      time = 20 * 60
-    } else if (testId.startsWith('science')) {
-      testQuestions = getRandomQuestions(15, 'science')
-      time = 20 * 60
-    } else if (testId.startsWith('english')) {
-      testQuestions = getRandomQuestions(15, 'english')
-      time = 15 * 60
+      // Math section
+      testQuestions = getRandomQuestions(22, 'math')
+      time = 35 * 60 // 35 minutes per module
     } else {
       // Quick practice - 10 random questions
       testQuestions = getRandomQuestions(10)

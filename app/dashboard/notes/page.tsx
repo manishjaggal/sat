@@ -12,7 +12,7 @@ interface Note {
   id: string;
   title: string;
   content: string;
-  subject: 'reading' | 'math' | 'science' | 'english' | 'general';
+  subject: 'reading-writing' | 'math' | 'general';
   tags: string[];
   createdAt: string;
   updatedAt: string;
@@ -22,68 +22,78 @@ interface Note {
 const initialNotes: Note[] = [
   {
     id: '1',
-    title: 'Key Medical Terminology Prefixes',
-    content: `## Common Prefixes
+    title: 'SAT Vocabulary - High Frequency Words',
+    content: `## Essential SAT Words
 
-- **hyper-** = over, excessive (hypertension, hyperglycemia)
-- **hypo-** = under, below (hypotension, hypoglycemia)
-- **brady-** = slow (bradycardia)
-- **tachy-** = fast (tachycardia)
-- **poly-** = many (polyuria)
-- **oligo-** = few (oliguria)
-- **a-/an-** = without (anemia, apnea)
-- **anti-** = against (antibiotic)
-- **bi-** = two (bilateral)
-- **dys-** = difficult, painful (dyspnea)`,
-    subject: 'english',
-    tags: ['vocabulary', 'medical terms', 'prefixes'],
+- **Ambiguous** = unclear, open to multiple interpretations
+- **Bolster** = to support or strengthen
+- **Candid** = honest and straightforward
+- **Discrepancy** = difference, inconsistency
+- **Ephemeral** = lasting for a very short time
+- **Facilitate** = to make easier
+- **Mitigate** = to make less severe
+- **Nuanced** = subtle, with fine distinctions
+- **Pragmatic** = practical, focused on results
+- **Substantiate** = to provide evidence for`,
+    subject: 'reading-writing',
+    tags: ['vocabulary', 'high-frequency', 'definitions'],
     createdAt: 'Nov 28, 2024',
     updatedAt: 'Nov 30, 2024',
     pinned: true
   },
   {
     id: '2',
-    title: 'Cardiovascular System Notes',
-    content: `## Heart Chambers
+    title: 'Quadratic Formula & Applications',
+    content: `## The Quadratic Formula
 
-**Right side** (receives deoxygenated blood):
-- Right atrium → receives from body via vena cava
-- Right ventricle → pumps to lungs via pulmonary artery
+**x = (-b ± √(b² - 4ac)) / 2a**
 
-**Left side** (receives oxygenated blood):
-- Left atrium → receives from lungs via pulmonary veins
-- Left ventricle → pumps to body via aorta (thickest wall!)
+For ax² + bx + c = 0
 
-## Blood Flow Path
-Body → Vena Cava → Right Atrium → Right Ventricle → Pulmonary Artery → Lungs → Pulmonary Veins → Left Atrium → Left Ventricle → Aorta → Body`,
-    subject: 'science',
-    tags: ['anatomy', 'heart', 'cardiovascular'],
+## Discriminant (b² - 4ac)
+- > 0: Two real solutions
+- = 0: One real solution (repeated root)
+- < 0: No real solutions (complex)
+
+## Vertex Form
+y = a(x - h)² + k
+- Vertex at (h, k)
+- a > 0: opens up (minimum)
+- a < 0: opens down (maximum)
+
+## Finding Vertex from Standard Form
+x = -b/(2a)`,
+    subject: 'math',
+    tags: ['quadratics', 'formulas', 'algebra'],
     createdAt: 'Nov 27, 2024',
     updatedAt: 'Nov 29, 2024',
     pinned: true
   },
   {
     id: '3',
-    title: 'Math Formulas - Quick Reference',
+    title: 'SAT Math Formulas - Quick Reference',
     content: `## Essential Formulas
 
-**Percentages:**
-- Percent change = ((New - Old) / Old) × 100
-- Finding X% of Y = Y × (X/100)
+**Geometry:**
+- Circle Area: A = πr²
+- Circle Circumference: C = 2πr
+- Triangle Area: A = ½bh
+- Pythagorean: a² + b² = c²
 
-**Ratios & Proportions:**
-- Cross multiply: if a/b = c/d, then ad = bc
+**Special Triangles:**
+- 30-60-90: 1 : √3 : 2
+- 45-45-90: 1 : 1 : √2
 
-**Temperature Conversion:**
-- F to C: C = (F - 32) × 5/9
-- C to F: F = (C × 9/5) + 32
+**Trigonometry:**
+- sin = opposite/hypotenuse
+- cos = adjacent/hypotenuse
+- tan = opposite/adjacent
 
-**Metric Conversions:**
-- 1 kg = 1000 g = 2.2 lbs
-- 1 L = 1000 mL
-- 1 m = 100 cm = 1000 mm`,
+**Statistics:**
+- Mean = sum/count
+- Probability = favorable/total`,
     subject: 'math',
-    tags: ['formulas', 'conversions', 'quick reference'],
+    tags: ['formulas', 'geometry', 'quick reference'],
     createdAt: 'Nov 26, 2024',
     updatedAt: 'Nov 26, 2024',
     pinned: false
@@ -93,23 +103,26 @@ Body → Vena Cava → Right Atrium → Right Ventricle → Pulmonary Artery →
     title: 'Reading Comprehension Strategies',
     content: `## Key Strategies
 
-1. **Preview the passage** - scan headings, first sentences
-2. **Read the questions first** - know what to look for
-3. **Identify main idea** - usually in first/last paragraph
-4. **Look for signal words**:
-   - Contrast: however, but, although
-   - Addition: furthermore, also, moreover
-   - Cause/effect: because, therefore, as a result
-5. **Don't assume** - stick to what's stated
-6. **Process of elimination** - rule out wrong answers
+1. **Read the blurb first** - context about passage
+2. **Skim for structure** - main idea of each paragraph
+3. **Read questions before passage** - know what to look for
+4. **Underline key transitions**:
+   - Contrast: however, but, although, yet
+   - Addition: furthermore, moreover, also
+   - Cause/effect: therefore, consequently
 
 ## Question Types
-- Main idea questions
-- Detail questions
-- Inference questions
+- Main idea/purpose
+- Inference (what's implied)
 - Vocabulary in context
-- Author's purpose`,
-    subject: 'reading',
+- Evidence support
+- Cross-text connections
+
+## Answer Strategy
+- Eliminate obviously wrong answers
+- Look for evidence in text
+- Don't overthink - answer is in the passage!`,
+    subject: 'reading-writing',
     tags: ['strategies', 'comprehension', 'test tips'],
     createdAt: 'Nov 25, 2024',
     updatedAt: 'Nov 28, 2024',
@@ -121,13 +134,13 @@ Body → Vena Cava → Right Atrium → Right Ventricle → Pulmonary Artery →
     content: `## Key Rules
 
 1. **Singular subjects** take singular verbs
-   - The patient *is* waiting.
+   - The student *is* studying.
 
 2. **Compound subjects with AND** take plural verbs
    - The teacher and student *are* here.
 
 3. **Collective nouns** usually take singular verbs
-   - The group *is* meeting.
+   - The team *is* winning.
 
 4. **Neither/Either...nor/or** - verb agrees with closest noun
    - Neither the students nor the teacher *is* available.
@@ -135,10 +148,10 @@ Body → Vena Cava → Right Atrium → Right Ventricle → Pulmonary Artery →
 5. **Indefinite pronouns** (everyone, each, nobody) are singular
    - Everyone *needs* to sign in.
 
-6. **Interrupting phrases** don't affect subject-verb agreement
-   - The patient, along with her children, *was* discharged.`,
-    subject: 'english',
-    tags: ['grammar', 'subject-verb', 'rules'],
+6. **Interrupting phrases** don't affect agreement
+   - The book, along with the notes, *was* helpful.`,
+    subject: 'reading-writing',
+    tags: ['grammar', 'subject-verb', 'conventions'],
     createdAt: 'Nov 24, 2024',
     updatedAt: 'Nov 24, 2024',
     pinned: false
@@ -175,10 +188,8 @@ export default function NotesPage() {
 
   const getSubjectColor = (subject: string) => {
     switch (subject) {
-      case 'reading': return 'teal'
-      case 'math': return 'amber'
-      case 'science': return 'coral'
-      case 'english': return 'navy'
+      case 'reading-writing': return 'coral'
+      case 'math': return 'teal'
       default: return 'gray'
     }
   }
@@ -242,7 +253,7 @@ export default function NotesPage() {
             <FileText size={28} />
             Study Notes
           </h1>
-          <p>Organize your study materials and key concepts</p>
+          <p>Organize your SAT study materials and key concepts</p>
         </div>
 
         <button 
@@ -272,13 +283,13 @@ export default function NotesPage() {
         </div>
 
         <div className={styles.subjectFilter}>
-          {['all', 'reading', 'math', 'science', 'english', 'general'].map(subject => (
+          {['all', 'reading-writing', 'math', 'general'].map(subject => (
             <button
               key={subject}
               className={`${styles.subjectBtn} ${selectedSubject === subject ? styles.active : ''}`}
               onClick={() => setSelectedSubject(subject)}
             >
-              {subject === 'all' ? 'All' : subject.charAt(0).toUpperCase() + subject.slice(1)}
+              {subject === 'all' ? 'All' : subject === 'reading-writing' ? 'R&W' : subject.charAt(0).toUpperCase() + subject.slice(1)}
             </button>
           ))}
         </div>
@@ -326,10 +337,8 @@ export default function NotesPage() {
                   className={styles.subjectSelect}
                 >
                   <option value="general">General</option>
-                  <option value="reading">Reading</option>
+                  <option value="reading-writing">Reading & Writing</option>
                   <option value="math">Math</option>
-                  <option value="science">Science</option>
-                  <option value="english">English</option>
                 </select>
 
                 <textarea
@@ -417,7 +426,7 @@ export default function NotesPage() {
             >
               <div className={styles.noteHeader}>
                 <span className={`${styles.subjectBadge} ${styles[getSubjectColor(note.subject)]}`}>
-                  {note.subject}
+                  {note.subject === 'reading-writing' ? 'R&W' : note.subject}
                 </span>
                 <div className={styles.noteActions}>
                   <button
@@ -464,4 +473,3 @@ export default function NotesPage() {
     </div>
   )
 }
-

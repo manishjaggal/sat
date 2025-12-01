@@ -7,14 +7,14 @@ import {
   Bookmark, BookmarkCheck, Search, Filter, Trash2,
   ChevronDown, CheckCircle2, XCircle, Tag, Clock,
   Folder, FolderPlus, Play, SortAsc, ArrowRight, 
-  BookOpen, Target, Beaker, MessageSquare, Eye
+  BookOpen, Calculator, Eye
 } from 'lucide-react'
 import styles from './bookmarks.module.css'
 
 interface SavedQuestion {
   id: string;
   question: string;
-  subject: 'reading' | 'math' | 'science' | 'english';
+  subject: 'reading-writing' | 'math';
   topic: string;
   difficulty: 'easy' | 'medium' | 'hard';
   savedAt: string;
@@ -26,14 +26,14 @@ interface SavedQuestion {
 
 const savedQuestions: SavedQuestion[] = [
   {
-    id: 'read-003',
-    question: 'According to the passage, the gut-brain axis refers to what type of communication?',
-    subject: 'reading',
-    topic: 'Key Ideas & Details',
+    id: 'rw-003',
+    question: 'Which choice best describes the main purpose of the passage?',
+    subject: 'reading-writing',
+    topic: 'Central Ideas',
     difficulty: 'hard',
     savedAt: 'Nov 30, 2024',
     status: 'new',
-    notes: 'Review bidirectional communication concept',
+    notes: 'Focus on author\'s purpose vs main idea',
     folder: 'Must Review'
   },
   {
@@ -48,20 +48,20 @@ const savedQuestions: SavedQuestion[] = [
     folder: 'Math Focus'
   },
   {
-    id: 'sci-004',
-    question: 'The sinoatrial (SA) node is located in which part of the heart?',
-    subject: 'science',
-    topic: 'Human Anatomy',
-    difficulty: 'hard',
+    id: 'rw-015',
+    question: 'As used in the passage, "undermine" most nearly means:',
+    subject: 'reading-writing',
+    topic: 'Words in Context',
+    difficulty: 'medium',
     savedAt: 'Nov 28, 2024',
     status: 'new',
-    folder: 'Anatomy'
+    folder: 'Vocabulary'
   },
   {
-    id: 'eng-023',
-    question: 'Which sentence demonstrates correct use of the subjunctive mood?',
-    subject: 'english',
-    topic: 'Grammar',
+    id: 'math-023',
+    question: 'If f(x) = 2x² - 3x + 1, what is f(-2)?',
+    subject: 'math',
+    topic: 'Advanced Math',
     difficulty: 'hard',
     savedAt: 'Nov 28, 2024',
     lastReviewed: 'Nov 29, 2024',
@@ -69,53 +69,51 @@ const savedQuestions: SavedQuestion[] = [
   },
   {
     id: 'math-029',
-    question: 'An IV drip delivers 125 mL/hour. How many mL in 3 hours 20 minutes?',
+    question: 'A circle has a circumference of 16π. What is its area?',
     subject: 'math',
-    topic: 'Ratios & Proportions',
+    topic: 'Geometry',
     difficulty: 'hard',
     savedAt: 'Nov 27, 2024',
     status: 'reviewed',
-    notes: 'Remember to convert minutes to decimal',
+    notes: 'C = 2πr, so r = 8. Area = πr² = 64π',
     folder: 'Must Review'
   },
   {
-    id: 'sci-025',
-    question: 'Which process describes the movement of water across a semipermeable membrane?',
-    subject: 'science',
-    topic: 'Life Science',
-    difficulty: 'hard',
+    id: 'rw-025',
+    question: 'Which choice provides the best transition between paragraphs?',
+    subject: 'reading-writing',
+    topic: 'Expression of Ideas',
+    difficulty: 'medium',
     savedAt: 'Nov 27, 2024',
     status: 'new',
-    folder: 'Science Basics'
+    folder: 'Transitions'
   },
   {
-    id: 'read-015',
-    question: 'When might a conflict arise between patient autonomy and beneficence?',
-    subject: 'reading',
-    topic: 'Integration of Knowledge',
+    id: 'rw-032',
+    question: 'The author\'s use of the phrase "a double-edged sword" serves to:',
+    subject: 'reading-writing',
+    topic: 'Craft and Structure',
     difficulty: 'hard',
     savedAt: 'Nov 26, 2024',
     lastReviewed: 'Nov 28, 2024',
     status: 'mastered'
   },
   {
-    id: 'eng-029',
-    question: 'What is the meaning of "iatrogenic"?',
-    subject: 'english',
-    topic: 'Vocabulary',
+    id: 'math-041',
+    question: 'What is the probability of selecting a red marble then a blue marble without replacement?',
+    subject: 'math',
+    topic: 'Problem-Solving & Data Analysis',
     difficulty: 'hard',
     savedAt: 'Nov 25, 2024',
     status: 'reviewed',
-    notes: 'iatro- = physician, -genic = caused by',
-    folder: 'Vocabulary'
+    notes: 'Dependent probability - multiply fractions',
+    folder: 'Probability'
   }
 ];
 
 const subjectIcons = {
-  reading: <BookOpen size={16} />,
-  math: <Target size={16} />,
-  science: <Beaker size={16} />,
-  english: <MessageSquare size={16} />
+  'reading-writing': <BookOpen size={16} />,
+  'math': <Calculator size={16} />
 }
 
 export default function BookmarksPage() {
@@ -157,10 +155,8 @@ export default function BookmarksPage() {
 
   const getSubjectColor = (subject: string) => {
     switch (subject) {
-      case 'reading': return 'teal'
-      case 'math': return 'amber'
-      case 'science': return 'coral'
-      case 'english': return 'navy'
+      case 'reading-writing': return 'coral'
+      case 'math': return 'teal'
       default: return 'teal'
     }
   }
@@ -182,10 +178,8 @@ export default function BookmarksPage() {
   }
 
   const subjectCounts = {
-    reading: questions.filter(q => q.subject === 'reading').length,
-    math: questions.filter(q => q.subject === 'math').length,
-    science: questions.filter(q => q.subject === 'science').length,
-    english: questions.filter(q => q.subject === 'english').length
+    'reading-writing': questions.filter(q => q.subject === 'reading-writing').length,
+    'math': questions.filter(q => q.subject === 'math').length
   }
 
   return (
@@ -240,7 +234,7 @@ export default function BookmarksPage() {
             {Object.entries(subjectCounts).map(([subject, count]) => (
               <button
                 key={subject}
-                className={`${styles.subjectPill} ${styles[subject]} ${selectedSubject === subject ? styles.active : ''}`}
+                className={`${styles.subjectPill} ${styles[getSubjectColor(subject)]} ${selectedSubject === subject ? styles.active : ''}`}
                 onClick={() => setSelectedSubject(selectedSubject === subject ? 'all' : subject)}
               >
                 {subjectIcons[subject as keyof typeof subjectIcons]}
