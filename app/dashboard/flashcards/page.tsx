@@ -133,9 +133,9 @@ export default function FlashcardsPage() {
   }, [cards.length])
 
   const handleKnown = useCallback(() => {
-    setKnownCards(prev => new Set([...prev, currentCardIndex]))
+    setKnownCards(prev => new Set([...Array.from(prev), currentCardIndex]))
     setReviewCards(prev => {
-      const newSet = new Set(prev)
+      const newSet = new Set(Array.from(prev))
       newSet.delete(currentCardIndex)
       return newSet
     })
@@ -155,9 +155,9 @@ export default function FlashcardsPage() {
   }, [currentCardIndex, handleNext, cards.length, knownCards.size, reviewCards.size])
 
   const handleReview = useCallback(() => {
-    setReviewCards(prev => new Set([...prev, currentCardIndex]))
+    setReviewCards(prev => new Set([...Array.from(prev), currentCardIndex]))
     setKnownCards(prev => {
-      const newSet = new Set(prev)
+      const newSet = new Set(Array.from(prev))
       newSet.delete(currentCardIndex)
       return newSet
     })
