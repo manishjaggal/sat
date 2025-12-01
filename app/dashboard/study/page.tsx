@@ -4,99 +4,93 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import {
-  BookOpen, Target, Beaker, MessageSquare, ChevronRight,
-  Clock, CheckCircle2, Lock, Star, TrendingUp, Zap,
-  Brain, Trophy, Flame, Play, Calendar, ArrowRight
+  BookOpen, Calculator, ChevronRight,
+  Clock, CheckCircle2, Star, TrendingUp, Zap,
+  Brain, Trophy, Flame, Calendar, ArrowRight, Target,
+  PenTool, BarChart3, Shapes
 } from 'lucide-react'
 import styles from './study.module.css'
 
 const subjects = [
   {
-    id: 'reading',
-    name: 'Language Arts',
+    id: 'reading-writing',
+    name: 'Reading & Writing',
     icon: <BookOpen size={20} />,
-    color: 'teal',
-    description: 'Reading comprehension, writing, and grammar',
-    progress: 68,
-    totalModules: 10,
-    completedModules: 7,
-    examWeight: '25%',
-    estimatedTime: '15h',
-    streak: 3,
-    lastStudied: 'Today'
+    color: 'coral',
+    description: 'Comprehension, vocabulary, grammar, and writing conventions',
+    progress: 65,
+    totalModules: 8,
+    completedModules: 5,
+    examWeight: '50%',
+    estimatedTime: '20h',
+    streak: 4,
+    lastStudied: 'Today',
+    scoreRange: '200-800',
+    topics: ['Information & Ideas', 'Craft & Structure', 'Standard English Conventions', 'Expression of Ideas']
   },
   {
     id: 'math',
-    name: 'Mathematical Reasoning',
-    icon: <Target size={20} />,
-    color: 'amber',
-    description: 'Algebra, geometry, and quantitative reasoning',
-    progress: 42,
-    totalModules: 12,
-    completedModules: 5,
-    examWeight: '25%',
-    estimatedTime: '18h',
-    streak: 0,
-    lastStudied: '2 days ago'
-  },
-  {
-    id: 'science',
-    name: 'Science',
-    icon: <Beaker size={20} />,
-    color: 'coral',
-    description: 'Life science, physical science, earth & space',
-    progress: 55,
-    totalModules: 10,
-    completedModules: 6,
-    examWeight: '25%',
-    estimatedTime: '14h',
-    streak: 1,
-    lastStudied: 'Yesterday'
-  },
-  {
-    id: 'english',
-    name: 'Social Studies',
-    icon: <MessageSquare size={20} />,
-    color: 'navy',
-    description: 'U.S. history, civics, economics, geography',
-    progress: 71,
+    name: 'Math',
+    icon: <Calculator size={20} />,
+    color: 'teal',
+    description: 'Algebra, advanced math, problem-solving, and geometry',
+    progress: 48,
     totalModules: 8,
-    completedModules: 6,
-    examWeight: '25%',
-    estimatedTime: '12h',
-    streak: 5,
-    lastStudied: 'Today'
+    completedModules: 4,
+    examWeight: '50%',
+    estimatedTime: '25h',
+    streak: 2,
+    lastStudied: 'Yesterday',
+    scoreRange: '200-800',
+    topics: ['Algebra', 'Advanced Math', 'Problem-Solving & Data Analysis', 'Geometry & Trigonometry']
   }
 ]
 
 const recommendedModules = [
   {
-    title: 'Linear Equations',
+    title: 'Quadratic Equations',
     subject: 'math',
     subjectName: 'Math',
     reason: '🎯 Weak area',
     duration: '25 min',
-    color: 'amber',
-    xp: 50
-  },
-  {
-    title: 'U.S. Constitution',
-    subject: 'english',
-    subjectName: 'Social Studies',
-    reason: '⭐ High-yield',
-    duration: '30 min',
-    color: 'navy',
-    xp: 75
-  },
-  {
-    title: 'Reading Comprehension',
-    subject: 'reading',
-    subjectName: 'Language Arts',
-    reason: '▶️ Continue',
-    duration: '20 min',
     color: 'teal',
-    xp: 40
+    xp: 50,
+    icon: <Calculator size={16} />
+  },
+  {
+    title: 'Vocabulary in Context',
+    subject: 'reading-writing',
+    subjectName: 'Reading & Writing',
+    reason: '⭐ High-yield',
+    duration: '20 min',
+    color: 'coral',
+    xp: 60,
+    icon: <BookOpen size={16} />
+  },
+  {
+    title: 'Linear Functions',
+    subject: 'math',
+    subjectName: 'Math',
+    reason: '▶️ Continue',
+    duration: '30 min',
+    color: 'teal',
+    xp: 45,
+    icon: <TrendingUp size={16} />
   }
+]
+
+const mathTopics = [
+  { name: 'Algebra', icon: <PenTool size={16} />, questions: 35, progress: 60 },
+  { name: 'Advanced Math', icon: <BarChart3 size={16} />, questions: 35, progress: 40 },
+  { name: 'Problem-Solving & Data', icon: <Target size={16} />, questions: 15, progress: 55 },
+  { name: 'Geometry & Trig', icon: <Shapes size={16} />, questions: 15, progress: 35 }
+]
+
+const rwTopics = [
+  { name: 'Information & Ideas', icon: <BookOpen size={16} />, questions: 26, progress: 70 },
+  { name: 'Craft & Structure', icon: <PenTool size={16} />, questions: 28, progress: 65 },
+  { name: 'English Conventions', icon: <CheckCircle2 size={16} />, questions: 26, progress: 60 },
+  { name: 'Expression of Ideas', icon: <Zap size={16} />, questions: 20, progress: 55 }
 ]
 
 const dailyGoals = [
@@ -110,6 +104,7 @@ export default function StudyPage() {
   const overallProgress = Math.round(subjects.reduce((sum, s) => sum + s.progress, 0) / subjects.length)
   const completedModules = subjects.reduce((sum, s) => sum + s.completedModules, 0)
   const totalModules = subjects.reduce((sum, s) => sum + s.totalModules, 0)
+  const predictedScore = Math.round(800 + (overallProgress / 100) * 800)
 
   return (
     <div className={styles.study}>
@@ -121,7 +116,7 @@ export default function StudyPage() {
       >
         <div>
           <h1>Study Materials</h1>
-          <p>Master each subject with lessons & practice</p>
+          <p>Master the Digital SAT with focused practice</p>
         </div>
         <div className={styles.headerStats}>
           <div className={styles.progressCircle}>
@@ -138,8 +133,8 @@ export default function StudyPage() {
             <span>{overallProgress}%</span>
           </div>
           <div className={styles.progressInfo}>
-            <strong>{completedModules}/{totalModules}</strong>
-            <span>modules done</span>
+            <strong>{predictedScore}</strong>
+            <span>predicted score</span>
           </div>
         </div>
       </motion.div>
@@ -214,7 +209,7 @@ export default function StudyPage() {
         </div>
       </motion.section>
 
-      {/* Subjects Grid */}
+      {/* SAT Sections */}
       <motion.section 
         className={styles.subjects}
         initial={{ opacity: 0, y: 20 }}
@@ -222,7 +217,8 @@ export default function StudyPage() {
         transition={{ duration: 0.4, delay: 0.15 }}
       >
         <div className={styles.subjectsHeader}>
-          <h2>All Subjects</h2>
+          <h2>SAT Sections</h2>
+          <span className={styles.totalScore}>Target: 1600</span>
         </div>
         <div className={styles.subjectsGrid}>
           {subjects.map((subject, idx) => (
@@ -254,6 +250,15 @@ export default function StudyPage() {
                 <h3>{subject.name}</h3>
                 <p>{subject.description}</p>
 
+                <div className={styles.topicsList}>
+                  {subject.topics.slice(0, 3).map((topic, i) => (
+                    <span key={i} className={styles.topicTag}>{topic}</span>
+                  ))}
+                  {subject.topics.length > 3 && (
+                    <span className={styles.topicTag}>+{subject.topics.length - 3}</span>
+                  )}
+                </div>
+
                 <div className={styles.subjectProgress}>
                   <div className={styles.progressBar}>
                     <div 
@@ -283,19 +288,65 @@ export default function StudyPage() {
         </div>
       </motion.section>
 
+      {/* Topic Breakdown */}
+      <motion.section 
+        className={styles.topicBreakdown}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      >
+        <h2>Topic Breakdown</h2>
+        <div className={styles.topicColumns}>
+          <div className={styles.topicColumn}>
+            <h3><Calculator size={16} /> Math Topics</h3>
+            {mathTopics.map((topic, idx) => (
+              <div key={idx} className={styles.topicItem}>
+                <div className={styles.topicItemLeft}>
+                  {topic.icon}
+                  <span>{topic.name}</span>
+                </div>
+                <div className={styles.topicItemRight}>
+                  <div className={styles.miniProgress}>
+                    <div style={{ width: `${topic.progress}%` }} />
+                  </div>
+                  <span>{topic.progress}%</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className={styles.topicColumn}>
+            <h3><BookOpen size={16} /> Reading & Writing Topics</h3>
+            {rwTopics.map((topic, idx) => (
+              <div key={idx} className={styles.topicItem}>
+                <div className={styles.topicItemLeft}>
+                  {topic.icon}
+                  <span>{topic.name}</span>
+                </div>
+                <div className={styles.topicItemRight}>
+                  <div className={styles.miniProgress}>
+                    <div style={{ width: `${topic.progress}%` }} />
+                  </div>
+                  <span>{topic.progress}%</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </motion.section>
+
       {/* Study Streak */}
       <motion.section 
         className={styles.streakCard}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.2 }}
+        transition={{ duration: 0.4, delay: 0.25 }}
       >
         <div className={styles.streakIcon}>
           <Flame size={24} />
         </div>
         <div className={styles.streakInfo}>
           <strong>7 Day Study Streak! 🔥</strong>
-          <p>Keep studying daily to maintain your streak</p>
+          <p>Keep studying daily to boost your SAT score</p>
         </div>
         <div className={styles.streakDays}>
           {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((day, idx) => (
@@ -315,7 +366,7 @@ export default function StudyPage() {
         className={styles.quickActions}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.25 }}
+        transition={{ duration: 0.4, delay: 0.3 }}
       >
         <Link href="/dashboard/flashcards" className={styles.actionCard}>
           <Brain size={20} />
@@ -329,7 +380,7 @@ export default function StudyPage() {
           <Target size={20} />
           <div>
             <strong>Practice Test</strong>
-            <span>Test your knowledge</span>
+            <span>Full SAT simulation</span>
           </div>
           <ChevronRight size={16} />
         </Link>

@@ -52,10 +52,10 @@
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
-.subject_heroCard__ABv1e.subject_teal__nOps9::before { background: var(--teal); }
-.subject_heroCard__ABv1e.subject_amber__7YSTx::before { background: var(--amber); }
-.subject_heroCard__ABv1e.subject_coral__2hbbk::before { background: var(--coral); }
-.subject_heroCard__ABv1e.subject_navy__Pc4wE::before { background: var(--navy); }
+.subject_heroCard__ABv1e.subject_teal__nOps9::before { background: var(--primary-500); }
+.subject_heroCard__ABv1e.subject_amber__7YSTx::before { background: var(--accent-500); }
+.subject_heroCard__ABv1e.subject_coral__2hbbk::before { background: #ef4444; }
+.subject_heroCard__ABv1e.subject_navy__Pc4wE::before { background: var(--slate-600); }
 
 .subject_heroIcon__J254x {
   width: 72px;
@@ -69,22 +69,22 @@
 
 .subject_heroCard__ABv1e.subject_teal__nOps9 .subject_heroIcon__J254x {
   background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .subject_heroCard__ABv1e.subject_amber__7YSTx .subject_heroIcon__J254x {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .subject_heroCard__ABv1e.subject_coral__2hbbk .subject_heroIcon__J254x {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .subject_heroCard__ABv1e.subject_navy__Pc4wE .subject_heroIcon__J254x {
   background: rgba(44, 62, 80, 0.1);
-  color: var(--navy);
+  color: var(--slate-600);
 }
 
 .subject_heroContent__TB3eO {
@@ -145,15 +145,15 @@
 
 .subject_progressCircle__XPVxP .subject_progressValue__Q4sun {
   fill: none;
-  stroke: var(--teal);
+  stroke: var(--primary-500);
   stroke-width: 6;
   stroke-linecap: round;
   transition: stroke-dashoffset 0.5s ease;
 }
 
-.subject_heroCard__ABv1e.subject_amber__7YSTx .subject_progressValue__Q4sun { stroke: var(--amber); }
-.subject_heroCard__ABv1e.subject_coral__2hbbk .subject_progressValue__Q4sun { stroke: var(--coral); }
-.subject_heroCard__ABv1e.subject_navy__Pc4wE .subject_progressValue__Q4sun { stroke: var(--navy); }
+.subject_heroCard__ABv1e.subject_amber__7YSTx .subject_progressValue__Q4sun { stroke: var(--accent-500); }
+.subject_heroCard__ABv1e.subject_coral__2hbbk .subject_progressValue__Q4sun { stroke: #ef4444; }
+.subject_heroCard__ABv1e.subject_navy__Pc4wE .subject_progressValue__Q4sun { stroke: var(--slate-600); }
 
 .subject_progressCircle__XPVxP span {
   position: absolute;
@@ -209,17 +209,17 @@
 
 .subject_actionIcon__Cvo1A.subject_teal__nOps9 {
   background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .subject_actionIcon__Cvo1A.subject_amber__7YSTx {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .subject_actionIcon__Cvo1A.subject_coral__2hbbk {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .subject_actionCard__ZFBbJ div:nth-child(2) {
@@ -278,7 +278,7 @@
 .subject_moduleNumber___9tih {
   width: 36px;
   height: 36px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   border-radius: var(--radius-md);
   display: flex;
@@ -323,7 +323,7 @@
 
 .subject_moduleProgress__RyCpe .subject_progressFill__tcBaB {
   height: 100%;
-  background: var(--teal);
+  background: var(--primary-500);
   border-radius: var(--radius-full);
 }
 
@@ -407,7 +407,7 @@
 
 .subject_startLesson__QV9qa {
   padding: var(--space-sm) var(--space-md);
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.85rem;
   font-weight: 500;
@@ -421,7 +421,7 @@
 }
 
 .subject_startLesson__QV9qa:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .subject_lessonItem__s_Lmt.subject_completed__CmTmN .subject_startLesson__QV9qa:hover {
@@ -436,7 +436,7 @@
   gap: var(--space-sm);
   padding: var(--space-md);
   background: rgba(26, 95, 90, 0.08);
-  color: var(--teal-deep);
+  color: var(--primary-600);
   font-weight: 500;
   border-radius: var(--radius-md);
   transition: all 0.2s;
@@ -455,12 +455,12 @@
   display: flex;
   gap: var(--space-lg);
   padding: var(--space-lg);
-  background: linear-gradient(135deg, var(--amber-pale) 0%, rgba(196, 132, 29, 0.15) 100%);
+  background: linear-gradient(135deg, var(--accent-100) 0%, rgba(196, 132, 29, 0.15) 100%);
   border-radius: var(--radius-lg);
 }
 
 .subject_tipCard__rIJWn svg {
-  color: var(--amber);
+  color: var(--accent-500);
   flex-shrink: 0;
 }
 

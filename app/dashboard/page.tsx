@@ -6,51 +6,35 @@ import Link from 'next/link'
 import {
   BookOpen, Target, Clock, TrendingUp, ChevronRight,
   Play, CheckCircle2, Circle, Flame, Award, BarChart3,
-  Brain, FileText, Beaker, MessageSquare, Zap, Star,
+  Brain, FileText, Calculator, PenTool, Zap, Star,
   Calendar, Trophy, Sparkles, Gift, ArrowRight, Timer
 } from 'lucide-react'
 import styles from './page.module.css'
 
 const subjects = [
   { 
-    name: 'Reading', 
+    name: 'Reading & Writing', 
     icon: <BookOpen size={18} />, 
     progress: 68, 
-    color: 'teal',
+    color: 'coral',
     questions: 45,
-    href: '/dashboard/study/reading'
+    href: '/dashboard/study/reading-writing'
   },
   { 
     name: 'Mathematics', 
-    icon: <Target size={18} />, 
+    icon: <Calculator size={18} />, 
     progress: 42, 
-    color: 'amber',
+    color: 'teal',
     questions: 32,
     href: '/dashboard/study/math'
-  },
-  { 
-    name: 'Science', 
-    icon: <Beaker size={18} />, 
-    progress: 55, 
-    color: 'coral',
-    questions: 38,
-    href: '/dashboard/study/science'
-  },
-  { 
-    name: 'English', 
-    icon: <MessageSquare size={18} />, 
-    progress: 71, 
-    color: 'navy',
-    questions: 28,
-    href: '/dashboard/study/english'
   },
 ]
 
 const motivationalQuotes = [
-  { quote: "Every question you practice is one step closer to your diploma!", emoji: "🎯" },
+  { quote: "Every question you practice brings you closer to 1500+!", emoji: "🎯" },
   { quote: "You're doing amazing! Keep that momentum going!", emoji: "🚀" },
   { quote: "Success is the sum of small efforts repeated daily.", emoji: "✨" },
-  { quote: "The GED exam won't know what hit it!", emoji: "💪" },
+  { quote: "The SAT exam won't know what hit it!", emoji: "💪" },
   { quote: "Believe in yourself - you've got this!", emoji: "⭐" },
 ]
 
@@ -162,17 +146,17 @@ export default function DashboardHome() {
         transition={{ duration: 0.4, delay: 0.1 }}
       >
         <div className={styles.statCard}>
-          <div className={`${styles.statIcon} ${styles.teal}`}>
+          <div className={`${styles.statIcon} ${styles.coral}`}>
             <TrendingUp size={18} />
           </div>
           <div className={styles.statInfo}>
             <span className={styles.statLabel}>Predicted Score</span>
-            <strong className={styles.statValue}>76.4</strong>
-            <span className={styles.statChange}>+4.2 this week</span>
+            <strong className={styles.statValue}>1,380</strong>
+            <span className={styles.statChange}>+45 this week</span>
           </div>
         </div>
         <div className={styles.statCard}>
-          <div className={`${styles.statIcon} ${styles.amber}`}>
+          <div className={`${styles.statIcon} ${styles.teal}`}>
             <Clock size={18} />
           </div>
           <div className={styles.statInfo}>
@@ -182,7 +166,7 @@ export default function DashboardHome() {
           </div>
         </div>
         <div className={styles.statCard}>
-          <div className={`${styles.statIcon} ${styles.coral}`}>
+          <div className={`${styles.statIcon} ${styles.amber}`}>
             <Brain size={18} />
           </div>
           <div className={styles.statInfo}>
@@ -214,7 +198,7 @@ export default function DashboardHome() {
             transition={{ duration: 0.4, delay: 0.2 }}
           >
             <div className={styles.sectionHeader}>
-              <h2>Subject Progress</h2>
+              <h2>Section Progress</h2>
               <Link href="/dashboard/study" className={styles.sectionLink}>
                 View All <ChevronRight size={14} />
               </Link>
@@ -267,8 +251,8 @@ export default function DashboardHome() {
             <div className={styles.continueCard}>
               <div className={styles.continueContent}>
                 <span className={styles.continueLabel}>Mathematics</span>
-                <h3>Ratios and Proportions</h3>
-                <p>Learn to solve ratio problems commonly found on the GED.</p>
+                <h3>Quadratic Equations</h3>
+                <p>Master solving quadratics — a key skill for SAT Math.</p>
                 <div className={styles.continueProgress}>
                   <div className={styles.progressBar}>
                     <div className={styles.progressFill} style={{ width: '65%' }} />
@@ -407,7 +391,7 @@ export default function DashboardHome() {
               </div>
               <div className={styles.activityItem}>
                 <div className={styles.activityIcon}>
-                  <BookOpen size={16} />
+                  <Calculator size={16} />
                 </div>
                 <div className={styles.activityInfo}>
                   <strong>Algebra Lesson</strong>

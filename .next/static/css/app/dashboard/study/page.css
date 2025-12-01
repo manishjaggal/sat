@@ -57,7 +57,7 @@
 
 .study_progressCircle__g_AnJ .study_progressValue__gJ9vy {
   fill: none;
-  stroke: var(--teal);
+  stroke: var(--primary-500);
   stroke-width: 3;
   stroke-linecap: round;
   transition: stroke-dasharray 0.5s ease;
@@ -190,7 +190,7 @@
 }
 
 .study_recommended__CB6qq h2 svg {
-  color: var(--amber);
+  color: var(--accent-500);
 }
 
 .study_recommendedGrid__WxHdu {
@@ -219,9 +219,10 @@
   height: 3px;
 }
 
-.study_recommendedCard__eBmq3.study_teal__OheSJ::before { background: var(--teal); }
-.study_recommendedCard__eBmq3.study_amber__orJk_::before { background: var(--amber); }
-.study_recommendedCard__eBmq3.study_coral__U4yfx::before { background: var(--coral); }
+.study_recommendedCard__eBmq3.study_teal__OheSJ::before { background: var(--primary-500); }
+.study_recommendedCard__eBmq3.study_amber__orJk_::before { background: var(--accent-500); }
+.study_recommendedCard__eBmq3.study_coral__U4yfx::before { background: #ef4444; }
+.study_recommendedCard__eBmq3.study_navy__LsQbt::before { background: var(--slate-600); }
 
 .study_recommendedCard__eBmq3:hover {
   transform: translateY(-2px);
@@ -248,9 +249,9 @@
   font-size: 0.6rem;
   font-weight: 600;
   padding: 2px 6px;
-  background: var(--amber-pale);
-  color: var(--amber);
-  border-radius: var(--radius-sm);
+  background: var(--accent-100);
+  color: var(--accent-600);
+  border-radius: var(--radius-md);
 }
 
 .study_recommendedCard__eBmq3 h3 {
@@ -349,23 +350,23 @@
 }
 
 .study_subjectCard__FfAP1.study_teal__OheSJ .study_subjectIcon__scFLN {
-  background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  background: var(--primary-100);
+  color: var(--primary-600);
 }
 
 .study_subjectCard__FfAP1.study_amber__orJk_ .study_subjectIcon__scFLN {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-600);
 }
 
 .study_subjectCard__FfAP1.study_coral__U4yfx .study_subjectIcon__scFLN {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .study_subjectCard__FfAP1.study_navy__LsQbt .study_subjectIcon__scFLN {
-  background: rgba(44, 62, 80, 0.1);
-  color: var(--navy);
+  background: var(--slate-100);
+  color: var(--slate-600);
 }
 
 .study_subjectBadges__66yHA {
@@ -425,10 +426,10 @@
   transition: width 0.5s ease;
 }
 
-.study_subjectCard__FfAP1.study_teal__OheSJ .study_progressFill__ucTsF { background: var(--teal); }
-.study_subjectCard__FfAP1.study_amber__orJk_ .study_progressFill__ucTsF { background: var(--amber); }
-.study_subjectCard__FfAP1.study_coral__U4yfx .study_progressFill__ucTsF { background: var(--coral); }
-.study_subjectCard__FfAP1.study_navy__LsQbt .study_progressFill__ucTsF { background: var(--navy); }
+.study_subjectCard__FfAP1.study_teal__OheSJ .study_progressFill__ucTsF { background: var(--primary-500); }
+.study_subjectCard__FfAP1.study_amber__orJk_ .study_progressFill__ucTsF { background: var(--accent-500); }
+.study_subjectCard__FfAP1.study_coral__U4yfx .study_progressFill__ucTsF { background: #ef4444; }
+.study_subjectCard__FfAP1.study_navy__LsQbt .study_progressFill__ucTsF { background: var(--slate-600); }
 
 .study_progressMeta__lwHMX {
   display: flex;
@@ -457,16 +458,130 @@
   gap: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--teal);
+  color: var(--primary-600);
   transition: gap 0.2s;
 }
 
-.study_subjectCard__FfAP1.study_amber__orJk_ .study_continueBtn__3QWvZ { color: var(--amber); }
-.study_subjectCard__FfAP1.study_coral__U4yfx .study_continueBtn__3QWvZ { color: var(--coral); }
-.study_subjectCard__FfAP1.study_navy__LsQbt .study_continueBtn__3QWvZ { color: var(--navy); }
+.study_subjectCard__FfAP1.study_amber__orJk_ .study_continueBtn__3QWvZ { color: var(--accent-600); }
+.study_subjectCard__FfAP1.study_coral__U4yfx .study_continueBtn__3QWvZ { color: #ef4444; }
+.study_subjectCard__FfAP1.study_navy__LsQbt .study_continueBtn__3QWvZ { color: var(--slate-600); }
 
 .study_subjectCard__FfAP1:hover .study_continueBtn__3QWvZ {
   gap: 6px;
+}
+
+/* Topics List in Subject Cards */
+.study_topicsList__L8D_m {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: var(--space-sm);
+}
+
+.study_topicTag__aJV2M {
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  background: var(--paper-warm);
+  color: var(--ink-muted);
+  border-radius: var(--radius-sm);
+}
+
+.study_totalScore__OQbhh {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary-600);
+}
+
+/* Topic Breakdown Section */
+.study_topicBreakdown__wjWFC {
+  margin-bottom: var(--space-md);
+}
+
+.study_topicBreakdown__wjWFC h2 {
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+}
+
+.study_topicColumns__M8xOy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--space-md);
+  gap: var(--space-md);
+}
+
+.study_topicColumn__hQT2c {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--paper-accent);
+  padding: var(--space-md);
+}
+
+.study_topicColumn__hQT2c h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--paper-accent);
+}
+
+.study_topicColumn__hQT2c h3 svg {
+  color: var(--primary-600);
+}
+
+.study_topicItem__O3xfe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--paper-accent);
+}
+
+.study_topicItem__O3xfe:last-child {
+  border-bottom: none;
+}
+
+.study_topicItemLeft__crrK3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+
+.study_topicItemLeft__crrK3 svg {
+  color: var(--ink-subtle);
+}
+
+.study_topicItemRight__re2o6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.study_miniProgress__LZxG8 {
+  width: 50px;
+  height: 4px;
+  background: var(--paper-accent);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.study_miniProgress__LZxG8 div {
+  height: 100%;
+  background: var(--primary-500);
+  border-radius: var(--radius-full);
+}
+
+.study_topicItemRight__re2o6 span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  width: 32px;
+  text-align: right;
 }
 
 /* Streak Card */
@@ -570,9 +685,9 @@
   width: 32px;
   height: 32px;
   padding: 6px;
-  background: var(--paper-warm);
+  background: var(--primary-100);
   border-radius: var(--radius-md);
-  color: var(--teal);
+  color: var(--primary-600);
   flex-shrink: 0;
 }
 
@@ -619,6 +734,10 @@
   }
   
   .study_subjectsGrid__3qBIV {
+    grid-template-columns: 1fr;
+  }
+  
+  .study_topicColumns__M8xOy {
     grid-template-columns: 1fr;
   }
   

@@ -69,7 +69,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,14 +147,14 @@
 .settings_inputGroup___jIo6 input:focus,
 .settings_inputGroup___jIo6 select:focus {
   outline: none;
-  border-color: var(--teal);
+  border-color: var(--primary-500);
   box-shadow: 0 0 0 2px rgba(26, 95, 90, 0.1);
 }
 
 .settings_saveBtn__Yix_E {
   align-self: flex-start;
   padding: 8px 18px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.85rem;
   font-weight: 600;
@@ -163,7 +163,7 @@
 }
 
 .settings_saveBtn__Yix_E:hover {
-  background: var(--teal);
+  background: var(--primary-500);
   transform: translateY(-1px);
 }
 
@@ -231,7 +231,7 @@
 }
 
 .settings_toggle__1HJVw.settings_active__SCVlk {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .settings_toggleHandle__dJrcy {
@@ -282,7 +282,7 @@
   font-size: 0.65rem;
   font-weight: 600;
   padding: 2px 6px;
-  background: var(--teal);
+  background: var(--primary-500);
   color: white;
   border-radius: var(--radius-sm);
   margin-bottom: 2px;
@@ -307,7 +307,7 @@
 
 .settings_planBtn__YaoKj {
   padding: 6px 12px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.8rem;
   font-weight: 500;
@@ -316,7 +316,7 @@
 }
 
 .settings_planBtn__YaoKj:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .settings_planBtnSecondary__rw9uB {
@@ -337,11 +337,11 @@
 
 /* Danger Section */
 .settings_dangerSection__1PDDI {
-  border-color: var(--coral-pale);
+  border-color: rgba(239, 68, 68, 0.1);
 }
 
 .settings_dangerSection__1PDDI h2 {
-  color: var(--coral);
+  color: #ef4444;
 }
 
 .settings_dangerCard__G4iTB {
@@ -356,16 +356,16 @@
   gap: 6px;
   padding: 6px 12px;
   background: white;
-  color: var(--coral);
+  color: #ef4444;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid var(--coral);
+  border: 1px solid #ef4444;
   border-radius: var(--radius-md);
   transition: all 0.2s;
 }
 
 .settings_deleteBtn__C2bPP:hover {
-  background: var(--coral);
+  background: #ef4444;
   color: white;
 }
 

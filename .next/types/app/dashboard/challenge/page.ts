@@ -1,4 +1,4 @@
-// File: /Users/manishjaggal/Documents/eduweb/ATI TEAS TEST PREP/app/dashboard/challenge/page.tsx
+// File: /Users/manishjaggal/Documents/eduweb/satprep/app/dashboard/challenge/page.tsx
 import * as entry from '../../../../../app/dashboard/challenge/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

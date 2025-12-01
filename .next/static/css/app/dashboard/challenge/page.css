@@ -26,7 +26,7 @@
   align-items: center;
   gap: 6px;
   padding: 6px 14px;
-  background: linear-gradient(135deg, var(--amber) 0%, #e6a830 100%);
+  background: linear-gradient(135deg, var(--accent-500) 0%, #e6a830 100%);
   color: white;
   font-weight: 600;
   font-size: 0.8rem;
@@ -65,7 +65,7 @@
 }
 
 .challenge_infoItem__1CNii svg {
-  color: var(--teal);
+  color: var(--primary-500);
   width: 20px;
   height: 20px;
 }
@@ -86,13 +86,13 @@
   justify-content: center;
   gap: var(--space-sm);
   padding: 10px var(--space-md);
-  background: linear-gradient(135deg, var(--coral-pale) 0%, rgba(199, 92, 76, 0.15) 100%);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(199, 92, 76, 0.15) 100%);
   border-radius: var(--radius-lg);
   margin-bottom: var(--space-lg);
 }
 
 .challenge_streakInfo__7Z9EM svg {
-  color: var(--coral);
+  color: #ef4444;
   width: 18px;
   height: 18px;
 }
@@ -112,7 +112,7 @@
   align-items: center;
   gap: 8px;
   padding: 12px 32px;
-  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 100%);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -162,7 +162,7 @@
 }
 .challenge_points__VveTi {
   font-size: 0.8rem;
-  color: var(--teal);
+  color: var(--primary-500);
   font-weight: 600;
 }
 
@@ -207,7 +207,7 @@
 
 .challenge_progressFill__FrBVm {
   height: 100%;
-  background: var(--teal);
+  background: var(--primary-500);
   border-radius: var(--radius-full);
 }
 
@@ -216,9 +216,9 @@
   align-items: center;
   gap: 4px;
   padding: 6px 12px;
-  background: var(--amber-pale);
+  background: var(--accent-100);
   border-radius: var(--radius-full);
-  color: var(--amber);
+  color: var(--accent-500);
   font-weight: 600;
   font-size: 0.85rem;
 }
@@ -250,7 +250,7 @@
 }
 
 .challenge_timer__a5Cuk.challenge_green__5Y74Y { color: var(--success); }
-.challenge_timer__a5Cuk.challenge_amber__sHK0n { color: var(--amber); }
+.challenge_timer__a5Cuk.challenge_amber__sHK0n { color: var(--accent-500); }
 .challenge_timer__a5Cuk.challenge_red__c0TxU { color: var(--error); }
 
 .challenge_timerRing__jVQoz {
@@ -294,10 +294,10 @@
   text-transform: uppercase;
 }
 
-.challenge_subjectTag__2r4hn.challenge_reading__JbCSc { background: rgba(26, 95, 90, 0.1); color: var(--teal-deep); }
-.challenge_subjectTag__2r4hn.challenge_math__uo8a3 { background: var(--amber-pale); color: var(--amber); }
-.challenge_subjectTag__2r4hn.challenge_science__z3M0n { background: var(--coral-pale); color: var(--coral); }
-.challenge_subjectTag__2r4hn.challenge_english__fD_x3 { background: rgba(44, 62, 80, 0.1); color: var(--navy); }
+.challenge_subjectTag__2r4hn.challenge_reading__JbCSc { background: rgba(26, 95, 90, 0.1); color: var(--primary-600); }
+.challenge_subjectTag__2r4hn.challenge_math__uo8a3 { background: var(--accent-100); color: var(--accent-500); }
+.challenge_subjectTag__2r4hn.challenge_science__z3M0n { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.challenge_subjectTag__2r4hn.challenge_english__fD_x3 { background: rgba(44, 62, 80, 0.1); color: var(--slate-600); }
 
 .challenge_topicTag__IYb92 {
   padding: 3px 10px;
@@ -310,7 +310,7 @@
 .challenge_passage__3riQQ {
   padding: var(--space-sm) var(--space-md);
   background: var(--paper-warm);
-  border-left: 3px solid var(--teal);
+  border-left: 3px solid var(--primary-500);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   margin-bottom: var(--space-sm);
   font-size: 0.8rem;
@@ -353,7 +353,7 @@
 }
 
 .challenge_option__rLk6g.challenge_selected__ibEfH {
-  border-color: var(--teal);
+  border-color: var(--primary-500);
   background: rgba(26, 95, 90, 0.05);
 }
 
@@ -447,7 +447,7 @@
   gap: 6px;
   width: 100%;
   padding: 12px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.9rem;
   font-weight: 600;
@@ -456,7 +456,7 @@
 }
 
 .challenge_nextButton__jGT4M:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 /* Complete Card - Compact */
@@ -490,7 +490,7 @@
 }
 
 .challenge_trophyIcon__ua6QU {
-  color: var(--amber);
+  color: var(--accent-500);
   margin-bottom: var(--space-sm);
   width: 48px;
   height: 48px;
@@ -512,7 +512,7 @@
   font-family: var(--font-display);
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--teal);
+  color: var(--primary-500);
   line-height: 1;
 }
 
@@ -536,7 +536,7 @@
 }
 
 .challenge_statItem__yyIBY svg {
-  color: var(--teal);
+  color: var(--primary-500);
   width: 20px;
   height: 20px;
 }
@@ -616,7 +616,7 @@
 .challenge_trophyContainer__dpKy7 {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--amber) 0%, #f59e0b 100%);
+  background: linear-gradient(135deg, var(--accent-500) 0%, #f59e0b 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -678,7 +678,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  border: 2px solid var(--amber);
+  border: 2px solid var(--accent-500);
   border-radius: var(--radius-xl);
   padding: var(--space-md) var(--space-lg);
   box-shadow: var(--shadow-xl);
@@ -701,7 +701,7 @@
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 /* Achievement improvements */

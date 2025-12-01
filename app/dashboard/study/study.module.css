@@ -465,6 +465,119 @@
   gap: 6px;
 }
 
+/* Topics List in Subject Cards */
+.topicsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: var(--space-sm);
+}
+
+.topicTag {
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  background: var(--paper-warm);
+  color: var(--ink-muted);
+  border-radius: var(--radius-sm);
+}
+
+.totalScore {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary-600);
+}
+
+/* Topic Breakdown Section */
+.topicBreakdown {
+  margin-bottom: var(--space-md);
+}
+
+.topicBreakdown h2 {
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+}
+
+.topicColumns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.topicColumn {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--paper-accent);
+  padding: var(--space-md);
+}
+
+.topicColumn h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--ink);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--paper-accent);
+}
+
+.topicColumn h3 svg {
+  color: var(--primary-600);
+}
+
+.topicItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--paper-accent);
+}
+
+.topicItem:last-child {
+  border-bottom: none;
+}
+
+.topicItemLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+
+.topicItemLeft svg {
+  color: var(--ink-subtle);
+}
+
+.topicItemRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.miniProgress {
+  width: 50px;
+  height: 4px;
+  background: var(--paper-accent);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.miniProgress div {
+  height: 100%;
+  background: var(--primary-500);
+  border-radius: var(--radius-full);
+}
+
+.topicItemRight span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  width: 32px;
+  text-align: right;
+}
+
 /* Streak Card */
 .streakCard {
   display: flex;
@@ -614,6 +727,10 @@
   }
   
   .subjectsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .topicColumns {
     grid-template-columns: 1fr;
   }
   

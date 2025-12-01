@@ -1,81 +1,181 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/globals.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* Deep scholarly palette - warm and inviting */
-  --ink: #1a1a1f;
-  --ink-muted: #3d3d47;
-  --ink-subtle: #6b6b78;
+  /* SAT Prep - Bold Midnight & Coral Theme */
   
-  --paper: #faf9f7;
-  --paper-warm: #f5f3ef;
-  --paper-accent: #ebe8e1;
+  /* Midnight Navy - Primary Dark */
+  --midnight-950: #0a0e1a;
+  --midnight-900: #0f1629;
+  --midnight-800: #1a2340;
+  --midnight-700: #263052;
+  --midnight-600: #374466;
+  --midnight-500: #4a5a7a;
+  --midnight-400: #6b7a99;
+  --midnight-300: #94a3bb;
+  --midnight-200: #c4cdd9;
+  --midnight-100: #e8ebf0;
+  --midnight-50: #f5f7fa;
   
-  /* Accent colors - distinctive, not generic */
-  --teal-deep: #1a5f5a;
-  --teal: #237872;
-  --teal-light: #2d9b92;
-  --teal-pale: rgba(26, 95, 90, 0.08);
+  /* Coral - Primary Accent */
+  --coral-700: #c23a3a;
+  --coral-600: #dc4545;
+  --coral-500: #f05252;
+  --coral-400: #f67575;
+  --coral-300: #faa0a0;
+  --coral-200: #fcc8c8;
+  --coral-100: #fee5e5;
+  --coral-50: #fff5f5;
   
-  --amber: #c4841d;
-  --amber-light: #e9a23b;
-  --amber-pale: #fef3e2;
+  /* Teal - Secondary Accent */
+  --teal-700: #0d7377;
+  --teal-600: #129498;
+  --teal-500: #14b8bc;
+  --teal-400: #3ed1d5;
+  --teal-300: #72e4e7;
+  --teal-200: #a8f0f2;
+  --teal-100: #d4f9fa;
+  --teal-50: #edfeff;
   
-  --coral: #c75c4c;
-  --coral-light: #e07565;
-  --coral-pale: #fef0ed;
+  /* Amber - Warning/Gold */
+  --amber-600: #d97706;
+  --amber-500: #f59e0b;
+  --amber-400: #fbbf24;
+  --amber-300: #fcd34d;
+  --amber-100: #fef3c7;
+  --amber-50: #fffbeb;
   
-  --navy: #2c3e50;
-  --navy-light: #34495e;
-  --navy-pale: rgba(44, 62, 80, 0.08);
+  /* Emerald - Success */
+  --emerald-600: #059669;
+  --emerald-500: #10b981;
+  --emerald-400: #34d399;
+  --emerald-100: #d1fae5;
+  --emerald-50: #ecfdf5;
   
-  /* Extended colors */
-  --purple: #7c3aed;
-  --purple-pale: rgba(139, 92, 246, 0.08);
+  /* Warm Cream - Backgrounds */
+  --cream-100: #fffcf7;
+  --cream-200: #fef8f0;
+  --cream-300: #fdf3e7;
+  --cream-400: #f5ebe0;
   
-  /* Functional */
-  --success: #2d8a6e;
-  --success-pale: rgba(45, 138, 110, 0.1);
-  --warning: #c4841d;
-  --warning-pale: #fef3e2;
-  --error: #c75c4c;
-  --error-pale: #fef0ed;
+  /* Semantic aliases */
+  --ink: var(--midnight-900);
+  --ink-muted: var(--midnight-600);
+  --ink-subtle: var(--midnight-400);
   
-  /* Shadows with warmth */
-  --shadow-sm: 0 1px 2px rgba(26, 26, 31, 0.04), 0 1px 3px rgba(26, 26, 31, 0.06);
-  --shadow-md: 0 4px 6px rgba(26, 26, 31, 0.04), 0 2px 4px rgba(26, 26, 31, 0.06);
-  --shadow-lg: 0 10px 25px rgba(26, 26, 31, 0.06), 0 6px 12px rgba(26, 26, 31, 0.08);
-  --shadow-xl: 0 20px 40px rgba(26, 26, 31, 0.08), 0 12px 24px rgba(26, 26, 31, 0.1);
+  --paper: var(--cream-100);
+  --paper-warm: var(--cream-200);
+  --paper-accent: var(--cream-400);
   
-  /* Typography scale */
-  --font-display: 'Crimson Pro', Georgia, serif;
-  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --primary: var(--coral-500);
+  --primary-dark: var(--coral-600);
+  --primary-light: var(--coral-400);
+  --primary-pale: var(--coral-100);
   
-  /* Spacing - using 4px base */
-  --space-xs: 0.25rem;   /* 4px */
-  --space-sm: 0.5rem;    /* 8px */
-  --space-md: 1rem;      /* 16px */
-  --space-lg: 1.5rem;    /* 24px */
-  --space-xl: 2rem;      /* 32px */
-  --space-2xl: 3rem;     /* 48px */
-  --space-3xl: 4rem;     /* 64px */
-  --space-4xl: 6rem;     /* 96px */
+  --accent: var(--teal-500);
+  --accent-dark: var(--teal-600);
+  --accent-light: var(--teal-400);
+  --accent-pale: var(--teal-100);
   
-  /* Border radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
-  --radius-2xl: 24px;
+  --success: var(--emerald-500);
+  --success-pale: var(--emerald-100);
+  --warning: var(--amber-500);
+  --warning-pale: var(--amber-100);
+  --error: var(--coral-500);
+  --error-pale: var(--coral-100);
+  
+  /* Legacy compatibility */
+  --primary-600: var(--coral-600);
+  --primary-500: var(--coral-500);
+  --primary-400: var(--coral-400);
+  --primary-300: var(--coral-300);
+  --primary-200: var(--coral-200);
+  --primary-100: var(--coral-100);
+  --primary-50: var(--coral-50);
+  
+  --accent-600: var(--teal-600);
+  --accent-500: var(--teal-500);
+  --accent-400: var(--teal-400);
+  --accent-300: var(--teal-300);
+  --accent-200: var(--teal-200);
+  --accent-100: var(--teal-100);
+  --accent-50: var(--teal-50);
+  
+  --slate-950: var(--midnight-950);
+  --slate-900: var(--midnight-900);
+  --slate-800: var(--midnight-800);
+  --slate-700: var(--midnight-700);
+  --slate-600: var(--midnight-600);
+  --slate-500: var(--midnight-500);
+  --slate-400: var(--midnight-400);
+  --slate-300: var(--midnight-300);
+  --slate-200: var(--midnight-200);
+  --slate-100: var(--midnight-100);
+  --slate-50: var(--midnight-50);
+  
+  --success-600: var(--emerald-600);
+  --success-500: var(--emerald-500);
+  --success-400: var(--emerald-400);
+  --success-100: var(--emerald-100);
+  
+  --warning-600: var(--amber-600);
+  --warning-500: var(--amber-500);
+  --warning-400: var(--amber-400);
+  --warning-100: var(--amber-100);
+  
+  --error-600: var(--coral-600);
+  --error-500: var(--coral-500);
+  --error-400: var(--coral-400);
+  --error-100: var(--coral-100);
+  
+  --purple-600: #7c3aed;
+  --purple-500: #8b5cf6;
+  --purple-400: #a78bfa;
+  --purple-100: #ede9fe;
+  
+  /* Shadows - Warm tinted */
+  --shadow-xs: 0 1px 2px rgba(10, 14, 26, 0.04);
+  --shadow-sm: 0 2px 4px rgba(10, 14, 26, 0.06), 0 1px 2px rgba(10, 14, 26, 0.04);
+  --shadow-md: 0 4px 8px -1px rgba(10, 14, 26, 0.08), 0 2px 4px -2px rgba(10, 14, 26, 0.05);
+  --shadow-lg: 0 12px 20px -4px rgba(10, 14, 26, 0.1), 0 4px 8px -4px rgba(10, 14, 26, 0.06);
+  --shadow-xl: 0 24px 40px -8px rgba(10, 14, 26, 0.12), 0 10px 16px -6px rgba(10, 14, 26, 0.08);
+  --shadow-2xl: 0 32px 64px -12px rgba(10, 14, 26, 0.2);
+  --shadow-glow: 0 0 48px rgba(240, 82, 82, 0.2);
+  --shadow-glow-accent: 0 0 48px rgba(20, 184, 188, 0.2);
+  
+  /* Typography */
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Spacing - 4px base */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+  
+  /* Border radius - Softer */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-3xl: 40px;
   --radius-full: 9999px;
   
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 200ms ease;
   --transition-slow: 300ms ease;
-  --transition-spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-spring: 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-smooth: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   
   /* Z-index scale */
   --z-dropdown: 50;
@@ -84,13 +184,6 @@
   --z-sidebar: 90;
   --z-modal: 100;
   --z-toast: 110;
-}
-
-/* Dark mode support (optional) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Keep light mode for now - can be enabled later */
-  }
 }
 
 * {
@@ -124,8 +217,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 400;
+  line-height: 1.15;
   letter-spacing: -0.02em;
 }
 
@@ -156,7 +249,7 @@ img {
 /* Utility classes */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 var(--space-lg);
 }
@@ -167,29 +260,43 @@ img {
   }
 }
 
-/* Button styles */
+/* Button styles - Modern and bold */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  padding: var(--space-md) var(--space-xl);
-  font-size: 1rem;
+  padding: 16px 32px;
+  font-size: 0.95rem;
   font-weight: 600;
-  border-radius: var(--radius-lg);
+  font-family: var(--font-body);
+  border-radius: var(--radius-full);
   transition: all var(--transition-base);
   -webkit-tap-highlight-color: transparent;
-  min-height: 48px; /* Touch target */
+  min-height: 54px;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.01em;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 100%);
+  background: var(--coral-500);
   color: white;
+  box-shadow: 0 4px 16px rgba(240, 82, 82, 0.3);
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 50%);
+  opacity: 1;
 }
 
 .btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  background: var(--coral-600);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(240, 82, 82, 0.4);
 }
 
 .btn-primary:active {
@@ -199,36 +306,51 @@ img {
 .btn-secondary {
   background: white;
   color: var(--ink);
-  border: 2px solid var(--paper-accent);
+  border: 2px solid var(--midnight-200);
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-secondary:hover {
-  background: var(--paper-warm);
-  border-color: var(--ink-subtle);
+  background: var(--cream-200);
+  border-color: var(--midnight-300);
+  transform: translateY(-2px);
 }
 
 .btn-accent {
-  background: linear-gradient(135deg, var(--amber) 0%, var(--amber-light) 100%);
+  background: var(--teal-500);
   color: white;
+  box-shadow: 0 4px 16px rgba(20, 184, 188, 0.3);
 }
 
 .btn-accent:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  background: var(--teal-600);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(20, 184, 188, 0.4);
 }
 
-/* Focus states - accessibility */
+.btn-dark {
+  background: var(--midnight-900);
+  color: white;
+  box-shadow: 0 4px 16px rgba(10, 14, 26, 0.25);
+}
+
+.btn-dark:hover {
+  background: var(--midnight-800);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(10, 14, 26, 0.35);
+}
+
+/* Focus states */
 .btn:focus-visible,
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--teal);
+  outline: 2px solid var(--coral-400);
   outline-offset: 2px;
 }
 
-/* Hide focus ring for mouse users */
 :focus:not(:focus-visible) {
   outline: none;
 }
@@ -236,20 +358,36 @@ textarea:focus-visible {
 /* Card base style */
 .card {
   background: white;
-  border: 1px solid var(--paper-accent);
-  border-radius: var(--radius-lg);
+  border: 1px solid var(--cream-400);
+  border-radius: var(--radius-xl);
   transition: all var(--transition-base);
 }
 
 .card:hover {
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--midnight-200);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--coral-600) 0%, var(--coral-400) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-accent {
+  background: linear-gradient(135deg, var(--teal-600) 0%, var(--teal-400) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -265,7 +403,7 @@ textarea:focus-visible {
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-24px);
   }
   to {
     opacity: 1;
@@ -279,8 +417,8 @@ textarea:focus-visible {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(1deg); }
 }
 
 @keyframes shimmer {
@@ -288,62 +426,65 @@ textarea:focus-visible {
   100% { background-position: 200% 0; }
 }
 
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 24px rgba(240, 82, 82, 0.15); }
+  50% { box-shadow: 0 0 48px rgba(240, 82, 82, 0.3); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 /* Loading skeleton */
 .skeleton {
   background: linear-gradient(
     90deg,
-    var(--paper-warm) 25%,
-    var(--paper-accent) 50%,
-    var(--paper-warm) 75%
+    var(--cream-300) 25%,
+    var(--cream-400) 50%,
+    var(--cream-300) 75%
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
   border-radius: var(--radius-md);
 }
 
-/* Geometric background patterns */
-.pattern-dots {
-  background-image: radial-gradient(var(--paper-accent) 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-
-.pattern-grid {
-  background-image: 
-    linear-gradient(var(--paper-accent) 1px, transparent 1px),
-    linear-gradient(90deg, var(--paper-accent) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
-
 /* Selection styling */
 ::selection {
-  background: var(--teal-light);
+  background: var(--coral-400);
   color: white;
 }
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--paper-warm);
+  background: var(--cream-300);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--ink-subtle);
+  background: var(--midnight-300);
   border-radius: var(--radius-full);
+  border: 2px solid var(--cream-300);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--ink-muted);
+  background: var(--midnight-400);
 }
 
-/* Hide scrollbar on mobile but keep functionality */
 @media (max-width: 768px) {
   ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
   }
 }
 
@@ -358,7 +499,7 @@ textarea:focus-visible {
   }
 }
 
-/* Reduce motion for accessibility */
+/* Reduce motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -379,5 +520,35 @@ textarea:focus-visible {
   .no-print {
     display: none !important;
   }
+}
+
+/* Glass effect utility */
+.glass {
+  background: rgba(255, 252, 247, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Noise texture overlay for depth */
+.noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.015;
+  pointer-events: none;
+}
+
+/* Decorative patterns */
+.pattern-dots {
+  background-image: radial-gradient(var(--midnight-200) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.pattern-grid {
+  background-image: 
+    linear-gradient(var(--cream-400) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cream-400) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 

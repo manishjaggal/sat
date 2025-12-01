@@ -93,7 +93,7 @@
 
 .progress_scoreFill__qkdAE {
   fill: none;
-  stroke: var(--teal);
+  stroke: var(--primary-500);
   stroke-width: 8;
   stroke-linecap: round;
   transition: stroke-dasharray 1s ease;
@@ -168,7 +168,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .progress_quickStatInfo__pISPp strong {
@@ -216,7 +216,7 @@
 }
 
 .progress_weakIcon__SzbJ3 {
-  color: var(--coral);
+  color: #ef4444;
 }
 
 .progress_strongIcon__pSuRm {
@@ -224,7 +224,7 @@
 }
 
 .progress_awardIcon___r53n {
-  color: var(--amber);
+  color: var(--accent-500);
 }
 
 /* Chart */
@@ -258,7 +258,7 @@
 .progress_bar__svzfF {
   width: 70%;
   max-width: 32px;
-  background: linear-gradient(180deg, var(--teal) 0%, var(--teal-light) 100%);
+  background: linear-gradient(180deg, var(--primary-500) 0%, var(--primary-400) 100%);
   border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   position: relative;
   min-height: 16px;
@@ -305,22 +305,22 @@
 
 .progress_subjectIcon__C3or6.progress_teal__QB0j3 {
   background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .progress_subjectIcon__C3or6.progress_amber__GbFsn {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .progress_subjectIcon__C3or6.progress_coral__KMnVf {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .progress_subjectIcon__C3or6.progress_navy__npKxu {
   background: rgba(44, 62, 80, 0.1);
-  color: var(--navy);
+  color: var(--slate-600);
 }
 
 .progress_subjectInfo__VbFPU {
@@ -359,20 +359,20 @@
 
 .progress_subjectFill__eIw_z {
   height: 100%;
-  background: var(--teal);
+  background: var(--primary-500);
   border-radius: var(--radius-full);
 }
 
 .progress_subjectItem__K2PG4:nth-child(2) .progress_subjectFill__eIw_z {
-  background: var(--amber);
+  background: var(--accent-500);
 }
 
 .progress_subjectItem__K2PG4:nth-child(3) .progress_subjectFill__eIw_z {
-  background: var(--coral);
+  background: #ef4444;
 }
 
 .progress_subjectItem__K2PG4:nth-child(4) .progress_subjectFill__eIw_z {
-  background: var(--navy);
+  background: var(--slate-600);
 }
 
 .progress_subjectMeta___2Kar {
@@ -458,7 +458,7 @@
 
 .progress_milestoneFill__mpXaN {
   height: 100%;
-  background: var(--amber);
+  background: var(--accent-500);
   border-radius: var(--radius-full);
 }
 
@@ -523,8 +523,8 @@
 }
 
 .progress_testTrend__A7_Zz.progress_down__p99Xm {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 /* Areas Lists */
@@ -563,7 +563,7 @@
 }
 
 .progress_areaScore__zdqbx .progress_weak__vh08U {
-  color: var(--coral);
+  color: #ef4444;
 }
 
 .progress_areaScore__zdqbx .progress_strong__6BgGV {
@@ -578,7 +578,7 @@
   width: 100%;
   padding: 10px;
   margin-top: var(--space-sm);
-  background: var(--coral);
+  background: #ef4444;
   color: white;
   font-weight: 600;
   font-size: 0.8rem;
@@ -593,7 +593,7 @@
 
 /* Achievements */
 .progress_achievementSection__L5WiK {
-  background: linear-gradient(135deg, var(--amber-pale) 0%, rgba(196, 132, 29, 0.15) 100%);
+  background: linear-gradient(135deg, var(--accent-100) 0%, rgba(196, 132, 29, 0.15) 100%);
   border: 1px solid rgba(196, 132, 29, 0.2);
   border-radius: var(--radius-lg);
   padding: var(--space-md);
@@ -632,12 +632,12 @@
 
 .progress_achievementBadge__bemQd.progress_target__OOW3E {
   background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .progress_achievementBadge__bemQd.progress_brain__9w_5k {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .progress_achievement__AERFx span {

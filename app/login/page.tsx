@@ -4,8 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
-  GraduationCap, Mail, Lock, Eye, EyeOff, ArrowRight, Check, 
-  User, Sparkles, Shield, Zap, Award
+  Mail, Lock, Eye, EyeOff, ArrowRight, Check, 
+  User, Sparkles, Shield, Zap, Award, TrendingUp
 } from 'lucide-react'
 import styles from './login.module.css'
 
@@ -45,9 +45,9 @@ export default function LoginPage() {
         >
           <Link href="/" className={styles.logo}>
             <div className={styles.logoMark}>
-              <GraduationCap size={20} />
+              <span>S</span>
             </div>
-            <span className={styles.logoText}>GED<span>Prep</span></span>
+            <span className={styles.logoText}>SAT Prep</span>
           </Link>
 
           <div className={styles.formContent}>
@@ -63,8 +63,8 @@ export default function LoginPage() {
                   <h1>{isLogin ? 'Welcome back' : 'Create account'}</h1>
                   <p>
                     {isLogin 
-                      ? 'Continue your learning journey' 
-                      : 'Start your path to GED success'
+                      ? 'Continue your SAT prep journey' 
+                      : 'Start your path to 1500+'
                     }
                   </p>
                 </motion.div>
@@ -251,8 +251,8 @@ export default function LoginPage() {
                   <Zap size={18} />
                 </div>
                 <div>
-                  <strong>Smart Practice</strong>
-                  <span>AI-powered question targeting</span>
+                  <strong>AI-Powered Learning</strong>
+                  <span>Personalized to your level</span>
                 </div>
               </div>
               <div className={styles.featureItem}>
@@ -260,29 +260,29 @@ export default function LoginPage() {
                   <Shield size={18} />
                 </div>
                 <div>
-                  <strong>Exam Simulation</strong>
-                  <span>Real test conditions</span>
+                  <strong>Real SAT Experience</strong>
+                  <span>Exam-identical practice</span>
                 </div>
               </div>
               <div className={styles.featureItem}>
                 <div className={styles.featureIcon}>
-                  <Award size={18} />
+                  <TrendingUp size={18} />
                 </div>
                 <div>
-                  <strong>94% Pass Rate</strong>
-                  <span>Proven success record</span>
+                  <strong>200+ Point Boost</strong>
+                  <span>Guaranteed improvement</span>
                 </div>
               </div>
             </div>
 
             <div className={styles.testimonialCard}>
               <Sparkles className={styles.quoteIcon} size={20} />
-              <p>"GED Prep helped me pass on my first try. The practice questions were incredibly accurate!"</p>
+              <p>"SAT Prep helped me improve from 1180 to 1520. The adaptive practice tests were spot-on for the real exam!"</p>
               <div className={styles.testimonialAuthor}>
-                <div className={styles.avatar}>JC</div>
+                <div className={styles.avatar}>ER</div>
                 <div>
-                  <strong>Jessica Chen</strong>
-                  <span>GED Graduate</span>
+                  <strong>Emma Rodriguez</strong>
+                  <span>Stanford '28</span>
                 </div>
               </div>
             </div>
@@ -298,7 +298,7 @@ export default function LoginPage() {
               </div>
               <div className={styles.statItem}>
                 <strong>200+</strong>
-                <span>Lessons</span>
+                <span>Avg Gain</span>
               </div>
             </div>
           </div>

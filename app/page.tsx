@@ -8,9 +8,9 @@ import {
   ChevronRight, Star, Check, Menu, X, Sparkles,
   GraduationCap, TrendingUp, Shield, Zap, ArrowRight,
   Play, BarChart3, FileText, ChevronDown,
-  Smartphone, Calculator, BookMarked, PenTool, Lightbulb, Trophy,
-  CheckCircle2, Quote, Lock, Atom, Languages, Globe2,
-  Rocket, BadgeCheck, Timer, Layers, MousePointerClick
+  Calculator, PenTool, Lightbulb, Trophy,
+  CheckCircle2, Quote, Lock, Timer, MousePointerClick,
+  Rocket, BadgeCheck, BookMarked, Layers, Percent
 } from 'lucide-react'
 import styles from './page.module.css'
 
@@ -34,73 +34,55 @@ const staggerContainer = {
 
 const faqs = [
   {
-    question: "What is the GED test?",
-    answer: "The GED (General Educational Development) test is a group of four subject tests which, when passed, certify that the test taker has American or Canadian high school-level academic skills. It covers Reasoning Through Language Arts, Mathematical Reasoning, Science, and Social Studies."
+    question: "What is the Digital SAT?",
+    answer: "The Digital SAT is the new computerized version of the SAT, consisting of two sections: Reading & Writing and Math. It's adaptive, meaning the difficulty adjusts based on your performance. The test is 2 hours and 14 minutes long."
   },
   {
-    question: "How long does it take to prepare for the GED?",
-    answer: "Preparation time varies based on your current skill level. Most students prepare for 3-6 months. Our adaptive learning system helps you study efficiently by focusing on areas where you need the most improvement."
+    question: "How long should I prepare for the SAT?",
+    answer: "Most students prepare for 2-4 months. Our AI-powered platform accelerates your prep by identifying your weak areas and creating a personalized study path, helping you improve faster than traditional methods."
   },
   {
-    question: "What score do I need to pass the GED?",
-    answer: "You need a minimum score of 145 on each of the four subjects to pass. A score of 165-174 is considered 'GED College Ready,' and 175+ is 'GED College Ready + Credit.' Our platform helps you achieve your target score."
+    question: "What score do I need for top colleges?",
+    answer: "Top 20 universities typically look for scores of 1500+. However, many excellent schools accept scores in the 1200-1400 range. Our platform helps you set and achieve realistic score goals based on your target schools."
   },
   {
-    question: "Can I take the GED test online?",
-    answer: "Yes! The GED can be taken online through OnVUE remote proctoring or at official testing centers. Our practice tests simulate both environments so you're fully prepared."
+    question: "How accurate are your practice tests?",
+    answer: "Our practice tests are designed to mirror the actual Digital SAT experience with 98% accuracy. Students report that our questions match the difficulty, format, and timing of the real exam."
   },
   {
-    question: "Is GED Prep mobile-friendly?",
-    answer: "Absolutely! Our platform is fully optimized for mobile devices. Study on your phone, tablet, or computer – your progress syncs seamlessly across all devices."
+    question: "Can I access SAT Prep on mobile?",
+    answer: "Yes! Our platform is fully optimized for all devices. Study on your phone during commutes, on your tablet at home, or on your computer at school. Progress syncs across all devices instantly."
   },
   {
-    question: "What if I don't improve my score?",
-    answer: "We offer a 100% money-back guarantee. If you complete our program and don't see improvement, we'll refund your subscription. We're that confident in our method."
+    question: "Do you offer a score improvement guarantee?",
+    answer: "Absolutely. We guarantee a 200+ point improvement or your money back. Complete our recommended study plan, and if you don't see results, we'll refund your subscription in full."
   }
 ]
 
 const stats = [
-  { value: "98%", label: "Pass Rate", icon: <Trophy size={24} /> },
-  { value: "100K+", label: "Students", icon: <Users size={24} /> },
-  { value: "+47", label: "Avg Point Gain", icon: <TrendingUp size={24} /> },
+  { value: "200+", label: "Avg Score Boost", icon: <TrendingUp size={24} /> },
+  { value: "50K+", label: "Students", icon: <Users size={24} /> },
+  { value: "98%", label: "Accuracy", icon: <Target size={24} /> },
   { value: "4.9★", label: "App Rating", icon: <Star size={24} /> }
 ]
 
 const subjects = [
   {
-    title: 'Language Arts',
-    subtitle: 'Reading & Writing',
-    icon: <Languages size={32} />,
-    questions: '800+',
-    topics: ['Reading Comprehension', 'Writing & Grammar', 'Essay Writing', 'Critical Analysis'],
-    color: 'blue',
-    time: '150 min'
+    title: 'Reading & Writing',
+    subtitle: 'Evidence-Based',
+    icon: <BookOpen size={32} />,
+    questions: '1,200+',
+    topics: ['Reading Comprehension', 'Craft & Structure', 'Standard English', 'Expression of Ideas'],
+    color: 'coral',
+    time: '64 min'
   },
   {
     title: 'Mathematics',
-    subtitle: 'Reasoning',
+    subtitle: 'With Calculator',
     icon: <Calculator size={32} />,
-    questions: '650+',
-    topics: ['Algebra', 'Geometry', 'Data Analysis', 'Quantitative Reasoning'],
-    color: 'orange',
-    time: '115 min'
-  },
-  {
-    title: 'Science',
-    subtitle: 'Life & Physical',
-    icon: <Atom size={32} />,
-    questions: '700+',
-    topics: ['Life Science', 'Physical Science', 'Earth & Space', 'Scientific Method'],
-    color: 'emerald',
-    time: '90 min'
-  },
-  {
-    title: 'Social Studies',
-    subtitle: 'History & Civics',
-    icon: <Globe2 size={32} />,
-    questions: '600+',
-    topics: ['U.S. History', 'Civics & Government', 'Economics', 'Geography'],
-    color: 'purple',
+    questions: '1,000+',
+    topics: ['Algebra', 'Problem Solving', 'Advanced Math', 'Geometry & Trig'],
+    color: 'teal',
     time: '70 min'
   }
 ]
@@ -108,64 +90,68 @@ const subjects = [
 const features = [
   {
     icon: <Brain />,
-    title: 'AI-Powered Learning',
-    description: 'Smart algorithms identify your weak areas and create a personalized study path that adapts in real-time.',
-    gradient: 'blue'
+    title: 'Adaptive AI Learning',
+    description: 'Our algorithm identifies your weaknesses in real-time and adjusts your study path to maximize score improvement.',
+    gradient: 'coral'
   },
   {
     icon: <Target />,
-    title: 'Exam-Identical Practice',
-    description: '2,500+ questions that mirror the real GED in format, difficulty, and timing. No surprises on test day.',
-    gradient: 'orange'
+    title: 'Digital SAT Simulation',
+    description: '2,200+ questions that match the real Digital SAT format, difficulty, and adaptive structure exactly.',
+    gradient: 'teal'
   },
   {
     icon: <BarChart3 />,
     title: 'Score Prediction',
-    description: 'Know exactly when you\'re ready. Our algorithm predicts your actual GED score with 95% accuracy.',
-    gradient: 'emerald'
+    description: 'Know when you\'re ready. Our AI predicts your actual SAT score with 95% accuracy before test day.',
+    gradient: 'coral'
   },
   {
     icon: <Lightbulb />,
     title: 'Video Explanations',
-    description: 'Every question includes detailed video and text explanations so you truly understand the concepts.',
-    gradient: 'purple'
+    description: 'Every question includes step-by-step video solutions from expert tutors who scored 1550+.',
+    gradient: 'teal'
   },
   {
     icon: <Timer />,
     title: 'Timed Practice',
     description: 'Build speed and confidence with realistic time constraints that prepare you for test day pressure.',
-    gradient: 'blue'
+    gradient: 'coral'
   },
   {
     icon: <Layers />,
     title: 'Smart Flashcards',
-    description: 'Spaced repetition flashcards help you memorize key concepts and formulas for maximum retention.',
-    gradient: 'orange'
+    description: 'Master vocabulary and key concepts with spaced repetition cards designed for maximum retention.',
+    gradient: 'teal'
   }
 ]
 
 const testimonials = [
   {
-    quote: "I dropped out of high school 15 years ago. GED Prep made it possible for me to finally get my diploma while working full-time. The mobile app was a game-changer!",
-    name: "Marcus Johnson",
-    role: "Passed all 4 subjects",
-    score: "172 avg",
-    avatar: "MJ"
+    quote: "I went from 1180 to 1520 in just 8 weeks. The adaptive practice tests were incredibly effective — it felt like having a personal tutor available 24/7.",
+    name: "Emma Rodriguez",
+    role: "Stanford '28",
+    score: "1520",
+    avatar: "ER"
   },
   {
-    quote: "The practice tests were almost identical to the real exam. I walked in confident and passed on my first try. Best investment I've ever made in myself.",
-    name: "Sarah Chen",
-    role: "First-time passer",
-    score: "168 avg",
-    avatar: "SC"
+    quote: "The score prediction feature was spot-on. It told me I was ready for 1450+, and I scored 1480 on the real test. Incredibly accurate platform.",
+    name: "David Kim",
+    role: "MIT '28",
+    score: "1480",
+    avatar: "DK"
   },
   {
-    quote: "As a mom of three, I needed flexibility. I studied during lunch breaks and after the kids went to bed. Passed in just 2 months!",
-    name: "Jennifer Williams",
-    role: "Working parent",
-    score: "159 avg",
-    avatar: "JW"
+    quote: "As an international student, I needed flexibility. SAT Prep let me study during bus rides and lunch breaks. Improved 280 points while balancing school!",
+    name: "Priya Sharma",
+    role: "Columbia '28",
+    score: "1510",
+    avatar: "PS"
   }
+]
+
+const brands = [
+  "Harvard", "Stanford", "MIT", "Yale", "Princeton", "Columbia", "Brown", "Penn"
 ]
 
 export default function LandingPage() {
@@ -176,7 +162,7 @@ export default function LandingPage() {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveTestimonial((prev) => (prev + 1) % testimonials.length)
-    }, 5000)
+    }, 6000)
     return () => clearInterval(timer)
   }, [])
 
@@ -187,9 +173,9 @@ export default function LandingPage() {
         <div className={`container ${styles.navContent}`}>
           <Link href="/" className={styles.logo}>
             <div className={styles.logoMark}>
-              <GraduationCap size={22} />
+              <span>S</span>
             </div>
-            <span className={styles.logoText}>GED<span>Prep</span></span>
+            <span className={styles.logoText}>SAT Prep</span>
           </Link>
 
           <div className={styles.navLinks}>
@@ -241,7 +227,7 @@ export default function LandingPage() {
         <div className={styles.heroBackground}>
           <div className={styles.heroBg1} />
           <div className={styles.heroBg2} />
-          <div className={styles.heroGrid} />
+          <div className={styles.heroPattern} />
         </div>
         
         <div className={`container ${styles.heroContainer}`}>
@@ -251,22 +237,21 @@ export default function LandingPage() {
             animate="animate"
             variants={staggerContainer}
           >
-            <motion.div className={styles.heroPill} variants={fadeInUp}>
+            <motion.div className={styles.heroBadge} variants={fadeInUp}>
               <Sparkles size={14} />
-              <span>Trusted by 100,000+ students</span>
-              <div className={styles.pillGlow} />
+              <span>New: Digital SAT 2024 Updated</span>
             </motion.div>
 
             <motion.h1 variants={fadeInUp}>
-              Your Path to a
-              <span className={styles.heroHighlight}> High School Diploma</span>
-              <br />Starts Here
+              Score Higher on the
+              <span className={styles.heroHighlight}> SAT</span>
+              <br />with AI-Powered Prep
             </motion.h1>
 
             <motion.p variants={fadeInUp}>
-              Master all four GED subjects with AI-powered practice tests, 
-              personalized study plans, and expert-crafted content. 
-              Join over 100,000 students who passed on their first try.
+              Join 50,000+ students who boosted their scores by 200+ points. 
+              Our adaptive learning platform personalizes your study plan 
+              for maximum improvement in minimum time.
             </motion.p>
 
             <motion.div className={styles.heroButtons} variants={fadeInUp}>
@@ -284,7 +269,7 @@ export default function LandingPage() {
 
             <motion.div className={styles.heroSocial} variants={fadeInUp}>
               <div className={styles.avatarRow}>
-                {['DM', 'AK', 'JR', 'TS', 'LM'].map((initials, i) => (
+                {['ER', 'DK', 'PS', 'JC', 'AM'].map((initials, i) => (
                   <div key={i} className={styles.heroAvatar}>
                     {initials}
                   </div>
@@ -296,7 +281,7 @@ export default function LandingPage() {
                     <Star key={i} size={14} fill="currentColor" />
                   ))}
                 </div>
-                <span>4.9/5 from 15,000+ reviews</span>
+                <span>4.9/5 from 12,000+ reviews</span>
               </div>
             </motion.div>
           </motion.div>
@@ -312,25 +297,25 @@ export default function LandingPage() {
                 <div className={styles.cardDots}>
                   <span /><span /><span />
                 </div>
-                <span className={styles.cardTitle}>Practice Test — Mathematics</span>
+                <span className={styles.cardTitle}>SAT Practice — Math Section</span>
               </div>
               <div className={styles.cardBody}>
                 <div className={styles.questionMeta}>
-                  <span className={styles.questionNum}>Question 8 of 25</span>
+                  <span className={styles.questionNum}>Question 15 of 22</span>
                   <div className={styles.questionTimer}>
                     <Timer size={14} />
-                    <span>12:45</span>
+                    <span>18:32</span>
                   </div>
                 </div>
                 <p className={styles.questionText}>
-                  A store offers a 25% discount on all items. If a jacket originally costs $80, what is the sale price?
+                  If f(x) = 3x² - 2x + 5, what is the value of f(3) - f(1)?
                 </p>
                 <div className={styles.optionsList}>
                   {[
-                    { letter: 'A', text: '$55' },
-                    { letter: 'B', text: '$60', correct: true },
-                    { letter: 'C', text: '$65' },
-                    { letter: 'D', text: '$70' }
+                    { letter: 'A', text: '18' },
+                    { letter: 'B', text: '20', correct: true },
+                    { letter: 'C', text: '22' },
+                    { letter: 'D', text: '24' }
                   ].map((opt, i) => (
                     <div 
                       key={i} 
@@ -351,7 +336,7 @@ export default function LandingPage() {
               </div>
               <div>
                 <strong>Score Prediction</strong>
-                <span>172 / 200</span>
+                <span>1,480 / 1,600</span>
               </div>
             </div>
 
@@ -359,14 +344,26 @@ export default function LandingPage() {
               <div className={styles.floatIconAlt}>
                 <Zap size={16} />
               </div>
-              <span>Ready to pass!</span>
+              <span>Ready for 1500+!</span>
             </div>
 
             <div className={styles.floatCard3}>
               <BadgeCheck size={18} />
-              <span>847 questions completed</span>
+              <span>847 questions mastered</span>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Brand Bar */}
+      <section className={styles.brandBar}>
+        <div className={styles.brandBarContent}>
+          <span className={styles.brandLabel}>Students accepted to</span>
+          <div className={styles.brandList}>
+            {brands.map((brand, idx) => (
+              <span key={idx} className={styles.brand}>{brand}</span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -403,9 +400,9 @@ export default function LandingPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className={styles.sectionTag}>Why GED Prep</span>
-            <h2>Everything you need to pass</h2>
-            <p>Our comprehensive platform combines proven study methods with cutting-edge technology</p>
+            <span className={styles.sectionTag}>Why SAT Prep</span>
+            <h2>Everything you need to ace the SAT</h2>
+            <p>Our comprehensive platform combines proven strategies with cutting-edge AI technology</p>
           </motion.div>
 
           <div className={styles.featuresGrid}>
@@ -439,8 +436,8 @@ export default function LandingPage() {
             viewport={{ once: true }}
           >
             <span className={styles.sectionTag}>Complete Coverage</span>
-            <h2>Master all four GED subjects</h2>
-            <p>Comprehensive preparation aligned with the latest GED test requirements</p>
+            <h2>Master both Digital SAT sections</h2>
+            <p>Comprehensive preparation aligned with the 2024 Digital SAT format</p>
           </motion.div>
 
           <div className={styles.subjectsGrid}>
@@ -451,7 +448,7 @@ export default function LandingPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
+                transition={{ delay: idx * 0.15 }}
               >
                 <div className={styles.subjectTop}>
                   <div className={styles.subjectIcon}>
@@ -478,7 +475,7 @@ export default function LandingPage() {
                 </ul>
 
                 <Link 
-                  href={`/dashboard/study/${subject.title.toLowerCase().replace(' ', '-')}`} 
+                  href={`/dashboard/study/${subject.title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`} 
                   className={styles.subjectLink}
                 >
                   Start Learning
@@ -500,7 +497,7 @@ export default function LandingPage() {
             viewport={{ once: true }}
           >
             <span className={styles.sectionTag}>How It Works</span>
-            <h2>Three steps to your diploma</h2>
+            <h2>Three steps to your dream score</h2>
           </motion.div>
 
           <div className={styles.stepsRow}>
@@ -509,19 +506,19 @@ export default function LandingPage() {
                 num: '01',
                 icon: <MousePointerClick size={28} />,
                 title: 'Take the Diagnostic',
-                description: 'Our diagnostic test identifies your strengths and areas needing improvement in just 30 minutes.'
+                description: 'Our AI-powered diagnostic identifies your exact strengths and weaknesses in just 20 minutes.'
               },
               {
                 num: '02',
                 icon: <Rocket size={28} />,
                 title: 'Follow Your Plan',
-                description: 'Get a personalized study plan with daily goals, practice tests, and video lessons tailored to you.'
+                description: 'Get a personalized study plan with daily targets, adaptive practice, and progress tracking.'
               },
               {
                 num: '03',
                 icon: <Trophy size={28} />,
-                title: 'Pass Your GED',
-                description: 'When our score predictor shows you\'re ready, schedule your test and pass with confidence.'
+                title: 'Ace the SAT',
+                description: 'When our score predictor shows you\'re ready, take the test with confidence and achieve your goal.'
               }
             ].map((step, idx) => (
               <motion.div 
@@ -536,7 +533,6 @@ export default function LandingPage() {
                 <div className={styles.stepIcon}>{step.icon}</div>
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>
-                {idx < 2 && <div className={styles.stepLine} />}
               </motion.div>
             ))}
           </div>
@@ -553,7 +549,7 @@ export default function LandingPage() {
             viewport={{ once: true }}
           >
             <span className={styles.sectionTag}>Success Stories</span>
-            <h2>Join thousands who passed</h2>
+            <h2>Real students, real results</h2>
           </motion.div>
 
           <div className={styles.testimonialSlider}>
@@ -579,7 +575,7 @@ export default function LandingPage() {
                     <span>{testimonials[activeTestimonial].role}</span>
                   </div>
                   <div className={styles.authorScore}>
-                    <span>Score</span>
+                    <span>SAT Score</span>
                     <strong>{testimonials[activeTestimonial].score}</strong>
                   </div>
                 </div>
@@ -610,51 +606,51 @@ export default function LandingPage() {
           >
             <span className={styles.sectionTag}>Simple Pricing</span>
             <h2>Invest in your future</h2>
-            <p>All plans include full access to 2,500+ practice questions</p>
+            <p>All plans include full access to 2,200+ practice questions</p>
           </motion.div>
 
           <div className={styles.pricingGrid}>
             {[
               {
-                name: 'Basic',
-                price: 29,
+                name: 'Monthly',
+                price: 39,
                 period: 'month',
-                description: 'Great for quick prep',
+                description: 'Perfect for focused prep',
                 features: [
                   'Full question bank access',
-                  '2 full practice exams',
-                  'Basic progress tracking',
+                  '3 full practice exams',
+                  'Basic analytics',
                   'Mobile app access'
                 ],
                 popular: false
               },
               {
                 name: 'Complete',
-                price: 49,
+                price: 79,
                 period: '3 months',
                 description: 'Most popular choice',
                 features: [
-                  'Everything in Basic',
-                  '8 full practice exams',
+                  'Everything in Monthly',
+                  '10 full practice exams',
                   'AI-powered study plan',
                   'Score prediction',
                   'Video explanations',
                   'Priority support',
-                  'Pass guarantee'
+                  '200+ point guarantee'
                 ],
                 popular: true
               },
               {
                 name: 'Premium',
-                price: 79,
+                price: 129,
                 period: '6 months',
-                description: 'Complete mastery',
+                description: 'For serious students',
                 features: [
                   'Everything in Complete',
                   '1-on-1 tutor session',
                   'Essay review & feedback',
-                  'Extended access',
-                  'Lifetime updates'
+                  'College application tips',
+                  'Lifetime access'
                 ],
                 popular: false
               }
@@ -706,7 +702,7 @@ export default function LandingPage() {
             </div>
             <div className={styles.guaranteeItem}>
               <Trophy size={18} />
-              <span>Pass guarantee</span>
+              <span>200+ point guarantee</span>
             </div>
           </div>
         </div>
@@ -771,8 +767,8 @@ export default function LandingPage() {
             viewport={{ once: true }}
           >
             <div className={styles.ctaContent}>
-              <h2>Ready to earn your diploma?</h2>
-              <p>Join 100,000+ students who transformed their lives with GED Prep.</p>
+              <h2>Ready to boost your SAT score?</h2>
+              <p>Join 50,000+ students who transformed their college prospects with SAT Prep.</p>
               <div className={styles.ctaButtons}>
                 <Link href="/dashboard" className={styles.ctaPrimary}>
                   Start Free Trial
@@ -782,7 +778,10 @@ export default function LandingPage() {
               </div>
             </div>
             <div className={styles.ctaVisual}>
-              <GraduationCap size={120} />
+              <div className={styles.scoreCircle}>
+                <span className={styles.scoreLabel}>Target</span>
+                <span className={styles.scoreValue}>1500+</span>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -795,11 +794,11 @@ export default function LandingPage() {
             <div className={styles.footerBrand}>
               <Link href="/" className={styles.logo}>
                 <div className={styles.logoMark}>
-                  <GraduationCap size={20} />
+                  <span>S</span>
                 </div>
-                <span className={styles.logoText}>GED<span>Prep</span></span>
+                <span className={styles.logoText}>SAT Prep</span>
               </Link>
-              <p>Empowering adults to achieve their educational goals since 2019. Your diploma is within reach.</p>
+              <p>Empowering students to achieve their dream scores and unlock opportunities at top universities since 2020.</p>
             </div>
             <div className={styles.footerLinks}>
               <div>
@@ -812,7 +811,7 @@ export default function LandingPage() {
               <div>
                 <h4>Resources</h4>
                 <a href="#">Study Tips</a>
-                <a href="#">GED Guide</a>
+                <a href="#">SAT Guide</a>
                 <a href="#">Blog</a>
                 <a href="#">Help Center</a>
               </div>
@@ -826,7 +825,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className={styles.footerBottom}>
-            <p>&copy; {new Date().getFullYear()} GED Prep. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} SAT Prep. All rights reserved.</p>
             <div className={styles.footerLegal}>
               <a href="#">Privacy</a>
               <a href="#">Terms</a>

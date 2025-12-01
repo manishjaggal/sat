@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
-  GraduationCap, ChevronRight, Target, BookOpen, 
-  Calendar, Trophy, Sparkles, X, Check
+  ChevronRight, Target, BookOpen, 
+  Calendar, Trophy, Sparkles, X, Check, TrendingUp
 } from 'lucide-react'
 import styles from './WelcomeModal.module.css'
 
@@ -15,28 +15,28 @@ interface WelcomeModalProps {
 
 const steps = [
   {
-    icon: <GraduationCap size={48} />,
-    title: 'Welcome to GED Prep! 🎓',
-    description: 'Your personalized study platform to pass the GED exam and earn your high school equivalency credential. Let\'s get you started!',
-    color: 'teal'
+    icon: <TrendingUp size={48} />,
+    title: 'Welcome to SAT Prep! 🎯',
+    description: 'Your AI-powered study platform to boost your SAT score by 200+ points. Let\'s get you started on your path to 1500+!',
+    color: 'coral'
   },
   {
     icon: <BookOpen size={48} />,
-    title: 'Study Smart, Not Hard',
-    description: 'Access comprehensive materials covering all 4 subjects: Language Arts, Mathematical Reasoning, Science, and Social Studies.',
-    color: 'amber'
+    title: 'Master Both Sections',
+    description: 'Access comprehensive materials covering Reading & Writing and Math — everything you need for the Digital SAT.',
+    color: 'teal'
   },
   {
     icon: <Target size={48} />,
     title: 'Practice Makes Perfect',
-    description: 'Take unlimited practice tests, quick quizzes, and daily challenges. Get instant feedback and detailed explanations.',
+    description: 'Take unlimited adaptive practice tests, quick quizzes, and daily challenges. Get instant feedback with expert explanations.',
     color: 'coral'
   },
   {
     icon: <Trophy size={48} />,
-    title: 'Earn Achievements',
-    description: 'Stay motivated with streaks, XP points, and unlockable achievements. Track your progress and celebrate every milestone.',
-    color: 'navy'
+    title: 'Track Your Progress',
+    description: 'Stay motivated with streaks, XP points, and score predictions. Know exactly when you\'re ready for test day.',
+    color: 'teal'
   }
 ]
 
@@ -63,7 +63,7 @@ export function WelcomeModal({ userName = 'there', onComplete }: WelcomeModalPro
 
   useEffect(() => {
     // Check if user has completed onboarding
-    const hasCompletedOnboarding = localStorage.getItem('ged-onboarding-complete')
+    const hasCompletedOnboarding = localStorage.getItem('sat-onboarding-complete')
     if (!hasCompletedOnboarding) {
       setIsOpen(true)
     }
@@ -76,13 +76,13 @@ export function WelcomeModal({ userName = 'there', onComplete }: WelcomeModalPro
   }
 
   const handleComplete = () => {
-    localStorage.setItem('ged-onboarding-complete', 'true')
+    localStorage.setItem('sat-onboarding-complete', 'true')
     setIsOpen(false)
     onComplete?.()
   }
 
   const handleSkip = () => {
-    localStorage.setItem('ged-onboarding-complete', 'true')
+    localStorage.setItem('sat-onboarding-complete', 'true')
     setIsOpen(false)
   }
 
@@ -148,7 +148,7 @@ export function WelcomeModal({ userName = 'there', onComplete }: WelcomeModalPro
                 <h2>Let's personalize your experience</h2>
                 
                 <div className={styles.setupSection}>
-                  <label>When is your GED exam?</label>
+                  <label>When is your SAT exam?</label>
                   <div className={styles.optionGrid}>
                     {examDates.map(date => (
                       <button
@@ -205,4 +205,3 @@ export function WelcomeModal({ userName = 'there', onComplete }: WelcomeModalPro
     </AnimatePresence>
   )
 }
-

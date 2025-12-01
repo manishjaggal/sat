@@ -1,4 +1,4 @@
-// File: /Users/manishjaggal/Documents/eduweb/ATI TEAS TEST PREP/app/dashboard/achievements/page.tsx
+// File: /Users/manishjaggal/Documents/eduweb/satprep/app/dashboard/achievements/page.tsx
 import * as entry from '../../../../../app/dashboard/achievements/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
-  GraduationCap, Home, BookOpen, FileText, BarChart3,
+  Home, BookOpen, FileText, BarChart3,
   Settings, LogOut, Menu, X, ChevronDown, User, Bell,
   Flame, Zap, Calendar, Trophy, Bookmark, StickyNote,
   Layers, Search
@@ -104,9 +104,9 @@ export default function DashboardLayout({
         <div className={styles.sidebarHeader}>
           <Link href="/" className={styles.logo}>
             <div className={styles.logoMark}>
-              <GraduationCap size={20} />
+              <span>S</span>
             </div>
-            <span className={styles.logoText}>GED<span>Prep</span></span>
+            <span className={styles.logoText}>SAT Prep</span>
           </Link>
           <button 
             className={styles.closeSidebar}
@@ -177,7 +177,7 @@ export default function DashboardLayout({
 
           <Link href="/dashboard" className={styles.mobileLogo}>
             <div className={styles.logoMark}>
-              <GraduationCap size={18} />
+              <span>S</span>
             </div>
           </Link>
 

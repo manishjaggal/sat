@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'GED Test Prep | Pass Your High School Equivalency Exam',
-  description: 'Master your GED exam with adaptive practice tests, comprehensive study guides, and personalized learning. Join 100,000+ successful students who earned their diploma.',
-  keywords: 'GED test, GED prep, high school equivalency, GED practice test, GED study guide',
+  title: 'SAT Prep | Boost Your Score 200+ Points',
+  description: 'Master the Digital SAT with AI-powered practice tests, personalized study plans, and expert strategies. Join 50,000+ students who achieved their dream scores.',
+  keywords: 'SAT prep, SAT practice test, Digital SAT, SAT study guide, college admissions, SAT score improvement',
 }
 
 export default function RootLayout({
