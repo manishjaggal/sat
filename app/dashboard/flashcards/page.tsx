@@ -5,44 +5,49 @@ import { motion, AnimatePresence, useMotionValue, useTransform, PanInfo } from '
 import Link from 'next/link'
 import {
   ChevronLeft, ChevronRight, RotateCcw, Check, X,
-  Shuffle, BookOpen, Target, Beaker, MessageSquare,
-  Clock, Brain, Zap, Star, Heart, Stethoscope, Keyboard,
-  Volume2, Trophy, Flame
+  Shuffle, BookOpen, Target, Calculator, MessageSquare,
+  Clock, Brain, Zap, Star, BarChart3, Keyboard,
+  Volume2, Trophy, Flame, PenTool, Compass
 } from 'lucide-react'
 import { flashcardDecks as importedDecks } from '@/lib/flashcards'
 import styles from './flashcards.module.css'
 
 // Map imported decks to include React icons
 const flashcardDecks = {
-  reading: {
-    ...importedDecks.reading,
+  vocabulary: {
+    ...importedDecks.vocabulary,
     icon: <BookOpen size={18} />,
-    color: 'teal',
-  },
-  math: {
-    ...importedDecks.math,
-    icon: <Target size={18} />,
-    color: 'amber',
-  },
-  science: {
-    ...importedDecks.science,
-    icon: <Beaker size={18} />,
     color: 'coral',
   },
-  english: {
-    ...importedDecks.english,
-    icon: <MessageSquare size={18} />,
-    color: 'navy',
+  grammar: {
+    ...importedDecks.grammar,
+    icon: <PenTool size={18} />,
+    color: 'teal',
   },
-  socialStudies: {
-    ...importedDecks.socialStudies,
-    icon: <Stethoscope size={18} />,
+  algebra: {
+    ...importedDecks.algebra,
+    icon: <Calculator size={18} />,
+    color: 'amber',
+  },
+  advancedMath: {
+    ...importedDecks.advancedMath,
+    icon: <Target size={18} />,
     color: 'purple',
   },
-  government: {
-    ...importedDecks.government,
-    icon: <Heart size={18} />,
-    color: 'red',
+  geometry: {
+    ...importedDecks.geometry,
+    icon: <Compass size={18} />,
+    color: 'navy',
+  },
+  dataAnalysis: {
+    ...importedDecks.dataAnalysis,
+    icon: <BarChart3 size={18} />,
+    color: 'coral',
+  },
+  reading: {
+    ...importedDecks.reading,
+    icon: <MessageSquare size={18} />,
+    color: 'teal',
   }
 }
 
@@ -228,7 +233,7 @@ export default function FlashcardsPage() {
             <Trophy size={48} />
           </div>
           <h1>Session Complete!</h1>
-          <p>You've reviewed all {cards.length} cards</p>
+          <p>You&apos;ve reviewed all {cards.length} cards</p>
           
           <div className={styles.completeStats}>
             <div className={styles.completeStat}>
@@ -280,7 +285,7 @@ export default function FlashcardsPage() {
           transition={{ duration: 0.4 }}
         >
           <h1>Flashcards</h1>
-          <p>Master key concepts with spaced repetition</p>
+          <p>Master key SAT concepts with spaced repetition</p>
         </motion.div>
 
         <motion.div 
