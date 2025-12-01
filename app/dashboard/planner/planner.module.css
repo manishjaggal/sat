@@ -29,7 +29,7 @@
   align-items: center;
   gap: var(--space-sm);
   padding: 10px 14px;
-  background: linear-gradient(135deg, var(--coral-pale) 0%, rgba(199, 92, 76, 0.15) 100%);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(199, 92, 76, 0.15) 100%);
   border-radius: var(--radius-lg);
 }
 
@@ -37,7 +37,7 @@
   font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--coral);
+  color: #ef4444;
   line-height: 1;
 }
 
@@ -146,11 +146,11 @@
 
 .calendarDay.today {
   background: rgba(26, 95, 90, 0.1);
-  border-color: var(--teal);
+  border-color: var(--primary-500);
 }
 
 .calendarDay.selected {
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
 }
 
@@ -175,10 +175,10 @@
   border-radius: 50%;
 }
 
-.taskDot.teal { background: var(--teal); }
-.taskDot.amber { background: var(--amber); }
-.taskDot.coral { background: var(--coral); }
-.taskDot.navy { background: var(--navy); }
+.taskDot.teal { background: var(--primary-500); }
+.taskDot.amber { background: var(--accent-500); }
+.taskDot.coral { background: #ef4444; }
+.taskDot.navy { background: var(--slate-600); }
 .taskDot.purple { background: #9b59b6; }
 
 .completedIndicator {
@@ -208,10 +208,10 @@
   border-radius: 50%;
 }
 
-.legendDot.teal { background: var(--teal); }
-.legendDot.amber { background: var(--amber); }
-.legendDot.coral { background: var(--coral); }
-.legendDot.navy { background: var(--navy); }
+.legendDot.teal { background: var(--primary-500); }
+.legendDot.amber { background: var(--accent-500); }
+.legendDot.coral { background: #ef4444; }
+.legendDot.navy { background: var(--slate-600); }
 
 /* Selected Day */
 .selectedDay {
@@ -239,7 +239,7 @@
   align-items: center;
   gap: 4px;
   padding: 6px 12px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.75rem;
   font-weight: 500;
@@ -248,7 +248,7 @@
 }
 
 .addTaskBtn:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .taskList {
@@ -290,10 +290,10 @@
   border-radius: 50%;
 }
 
-.taskCheckEmpty.teal { border-color: var(--teal); }
-.taskCheckEmpty.amber { border-color: var(--amber); }
-.taskCheckEmpty.coral { border-color: var(--coral); }
-.taskCheckEmpty.navy { border-color: var(--navy); }
+.taskCheckEmpty.teal { border-color: var(--primary-500); }
+.taskCheckEmpty.amber { border-color: var(--accent-500); }
+.taskCheckEmpty.coral { border-color: #ef4444; }
+.taskCheckEmpty.navy { border-color: var(--slate-600); }
 .taskCheckEmpty.purple { border-color: #9b59b6; }
 
 .taskItem .taskCheck svg {
@@ -333,14 +333,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--teal);
+  background: var(--primary-500);
   border-radius: var(--radius-sm);
   color: white;
   transition: all 0.2s;
 }
 
 .startBtn:hover {
-  background: var(--teal-deep);
+  background: var(--primary-600);
 }
 
 .taskAction {
@@ -409,10 +409,10 @@
   transform: scale(1.02);
 }
 
-.quickAddBtn.teal:hover { background: rgba(26, 95, 90, 0.15); color: var(--teal-deep); }
-.quickAddBtn.amber:hover { background: var(--amber-pale); color: var(--amber); }
-.quickAddBtn.coral:hover { background: var(--coral-pale); color: var(--coral); }
-.quickAddBtn.navy:hover { background: rgba(44, 62, 80, 0.15); color: var(--navy); }
+.quickAddBtn.teal:hover { background: rgba(26, 95, 90, 0.15); color: var(--primary-600); }
+.quickAddBtn.amber:hover { background: var(--accent-100); color: var(--accent-500); }
+.quickAddBtn.coral:hover { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.quickAddBtn.navy:hover { background: rgba(44, 62, 80, 0.15); color: var(--slate-600); }
 
 /* Right Column */
 .rightColumn {
@@ -457,7 +457,7 @@
 
 .progressFill {
   fill: none;
-  stroke: var(--teal);
+  stroke: var(--primary-500);
   stroke-width: 8;
   stroke-linecap: round;
   transition: stroke-dasharray 0.5s;
@@ -533,7 +533,7 @@
 }
 
 .statCard svg {
-  color: var(--teal);
+  color: var(--primary-500);
 }
 
 .statCard strong {
@@ -559,7 +559,7 @@
   align-items: center;
   gap: var(--space-xs);
   margin-bottom: var(--space-sm);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .pomodoroHeader h2 {
@@ -573,7 +573,7 @@
   gap: 6px;
   width: 100%;
   padding: 10px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.8rem;
   font-weight: 600;
@@ -582,7 +582,7 @@
 }
 
 .pomodoroBtn:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 /* Reminders */
@@ -601,7 +601,7 @@
 }
 
 .reminderHeader svg {
-  color: var(--amber);
+  color: var(--accent-500);
 }
 
 .reminderHeader h2 {
@@ -647,7 +647,7 @@
 }
 
 .reminderToggle input:checked + .toggle {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .reminderToggle input:checked + .toggle::after {
@@ -735,7 +735,7 @@
 .inputGroup input:focus,
 .inputGroup select:focus {
   outline: none;
-  border-color: var(--teal);
+  border-color: var(--primary-500);
 }
 
 .inputRow {
@@ -772,7 +772,7 @@
   justify-content: center;
   gap: 6px;
   padding: 10px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.85rem;
   font-weight: 600;
@@ -781,7 +781,7 @@
 }
 
 .saveBtn:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 /* Timer Modal */
@@ -863,7 +863,7 @@
 
 .timerProgress {
   fill: none;
-  stroke: var(--teal);
+  stroke: var(--primary-500);
   stroke-width: 6;
   stroke-linecap: round;
   transition: stroke-dasharray 1s linear;
@@ -911,19 +911,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--teal);
+  background: var(--primary-500);
   border-radius: 50%;
   color: white;
   transition: all 0.2s;
 }
 
 .timerPlayBtn:hover {
-  background: var(--teal-light);
+  background: var(--primary-400);
   transform: scale(1.05);
 }
 
 .timerPlayBtn.paused {
-  background: var(--amber);
+  background: var(--accent-500);
 }
 
 .timerTip {

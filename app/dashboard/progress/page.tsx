@@ -21,24 +21,24 @@ const weeklyData = [
 ]
 
 const subjectPerformance = [
-  { name: 'Reading', score: 82, change: +4, accuracy: 78, color: 'teal', icon: <BookOpen size={18} />, mastered: 45, total: 60 },
-  { name: 'Mathematics', score: 68, change: +8, accuracy: 65, color: 'amber', icon: <Target size={18} />, mastered: 28, total: 50 },
+  { name: 'Language Arts', score: 82, change: +4, accuracy: 78, color: 'teal', icon: <BookOpen size={18} />, mastered: 45, total: 60 },
+  { name: 'Math Reasoning', score: 68, change: +8, accuracy: 65, color: 'amber', icon: <Target size={18} />, mastered: 28, total: 50 },
   { name: 'Science', score: 75, change: +3, accuracy: 72, color: 'coral', icon: <Beaker size={18} />, mastered: 35, total: 55 },
-  { name: 'English', score: 88, change: +2, accuracy: 85, color: 'navy', icon: <MessageSquare size={18} />, mastered: 42, total: 45 }
+  { name: 'Social Studies', score: 88, change: +2, accuracy: 85, color: 'navy', icon: <MessageSquare size={18} />, mastered: 42, total: 45 }
 ]
 
 const weakAreas = [
-  { topic: 'Algebraic Equations', subject: 'Mathematics', accuracy: 45, questions: 12 },
+  { topic: 'Algebraic Equations', subject: 'Math', accuracy: 45, questions: 12 },
   { topic: 'Scientific Reasoning', subject: 'Science', accuracy: 52, questions: 18 },
-  { topic: 'Reading Comprehension', subject: 'Reading', accuracy: 58, questions: 25 },
-  { topic: 'Ratios & Proportions', subject: 'Mathematics', accuracy: 60, questions: 15 }
+  { topic: 'Reading Comprehension', subject: 'Language Arts', accuracy: 58, questions: 25 },
+  { topic: 'Ratios & Proportions', subject: 'Math', accuracy: 60, questions: 15 }
 ]
 
 const strongAreas = [
-  { topic: 'Grammar Rules', subject: 'English', accuracy: 92, questions: 35 },
-  { topic: 'Vocabulary', subject: 'English', accuracy: 88, questions: 42 },
-  { topic: 'Human Anatomy', subject: 'Science', accuracy: 85, questions: 38 },
-  { topic: 'Key Ideas & Details', subject: 'Reading', accuracy: 84, questions: 28 }
+  { topic: 'U.S. History', subject: 'Social Studies', accuracy: 92, questions: 35 },
+  { topic: 'Civics & Government', subject: 'Social Studies', accuracy: 88, questions: 42 },
+  { topic: 'Life Science', subject: 'Science', accuracy: 85, questions: 38 },
+  { topic: 'Key Ideas & Details', subject: 'Language Arts', accuracy: 84, questions: 28 }
 ]
 
 const recentTests = [
@@ -117,7 +117,7 @@ export default function ProgressPage() {
             </div>
           </div>
           <div className={styles.scoreInfo}>
-            <h2>Predicted TEAS Score</h2>
+            <h2>Predicted GED Score</h2>
             <div className={styles.scoreTrend}>
               <ArrowUp size={16} />
               <span>+4.2 this week</span>

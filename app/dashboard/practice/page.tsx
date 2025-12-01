@@ -59,45 +59,45 @@ const practiceTests = [
 const subjectTests = [
   {
     id: 'reading-1',
-    subject: 'Reading',
+    subject: 'Language Arts',
     icon: <BookOpen size={18} />,
-    title: 'Reading Comprehension',
-    questions: 45,
-    duration: '55 min',
+    title: 'Reading & Writing',
+    questions: 50,
+    duration: '150 min',
     color: 'teal',
     attempts: 3,
     bestScore: 84,
-    topics: ['Main Ideas', 'Inference', 'Vocabulary']
+    topics: ['Comprehension', 'Writing', 'Grammar']
   },
   {
     id: 'math-1',
-    subject: 'Mathematics',
+    subject: 'Math Reasoning',
     icon: <Target size={18} />,
-    title: 'Numbers & Operations',
-    questions: 36,
-    duration: '54 min',
+    title: 'Mathematical Reasoning',
+    questions: 46,
+    duration: '115 min',
     color: 'amber',
     attempts: 2,
     bestScore: 72,
-    topics: ['Algebra', 'Ratios', 'Percentages']
+    topics: ['Algebra', 'Geometry', 'Data Analysis']
   },
   {
     id: 'science-1',
     subject: 'Science',
     icon: <Beaker size={18} />,
-    title: 'Human Body Systems',
-    questions: 53,
-    duration: '63 min',
+    title: 'Science Reasoning',
+    questions: 40,
+    duration: '90 min',
     color: 'coral',
     attempts: 1,
     bestScore: 78,
-    topics: ['Anatomy', 'Biology', 'Chemistry']
+    topics: ['Life Science', 'Physical Science', 'Earth Science']
   },
   {
     id: 'english-1',
-    subject: 'English',
+    subject: 'Social Studies',
     icon: <MessageSquare size={18} />,
-    title: 'Grammar & Vocabulary',
+    title: 'Social Studies',
     questions: 28,
     duration: '28 min',
     color: 'navy',
@@ -243,7 +243,7 @@ export default function PracticePage() {
       >
         <div className={styles.sectionHeader}>
           <h2>Full Practice Exams</h2>
-          <span className={styles.sectionBadge}>Simulates real TEAS</span>
+          <span className={styles.sectionBadge}>Simulates real GED</span>
         </div>
         <div className={styles.testsGrid}>
           {practiceTests.map((test, idx) => (
@@ -479,7 +479,7 @@ export default function PracticePage() {
           <Award size={20} />
           <div>
             <strong>Pro Tip</strong>
-            <p>Score 80%+ on full exams to be TEAS-ready!</p>
+            <p>Score 80%+ on full exams to be GED-ready!</p>
           </div>
         </div>
       </motion.section>

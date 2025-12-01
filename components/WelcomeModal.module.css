@@ -57,11 +57,11 @@
 .dot.active {
   width: 24px;
   border-radius: var(--radius-full);
-  background: var(--teal);
+  background: linear-gradient(90deg, var(--primary-500) 0%, var(--primary-400) 100%);
 }
 
 .dot.completed {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .stepContent {
@@ -76,15 +76,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--paper-warm);
+  background: var(--primary-100);
   border-radius: 50%;
-  color: var(--teal);
+  color: var(--primary-600);
 }
 
-.iconWrapper.teal { background: rgba(26, 95, 90, 0.1); color: var(--teal-deep); }
-.iconWrapper.amber { background: var(--amber-pale); color: var(--amber); }
-.iconWrapper.coral { background: var(--coral-pale); color: var(--coral); }
-.iconWrapper.navy { background: rgba(44, 62, 80, 0.1); color: var(--navy); }
+.iconWrapper.teal { background: var(--primary-100); color: var(--primary-600); }
+.iconWrapper.amber { background: var(--accent-100); color: var(--accent-600); }
+.iconWrapper.coral { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.iconWrapper.navy { background: var(--slate-100); color: var(--slate-600); }
 
 .stepContent h2 {
   font-size: 1.5rem;
@@ -150,9 +150,9 @@
 }
 
 .optionBtn.selected {
-  background: rgba(26, 95, 90, 0.1);
-  border-color: var(--teal);
-  color: var(--teal-deep);
+  background: var(--primary-100);
+  border-color: var(--primary-500);
+  color: var(--primary-600);
 }
 
 .actions {
@@ -167,18 +167,20 @@
   justify-content: center;
   gap: 8px;
   padding: 14px 24px;
-  background: var(--teal-deep);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
   color: white;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
 }
 
 .nextBtn:hover,
 .startBtn:hover {
-  background: var(--teal);
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-400) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
 }
 
 .startBtn:disabled {
@@ -188,7 +190,7 @@
 }
 
 .startBtn {
-  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 100%);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-400) 100%);
 }
 
 @media (max-width: 480px) {

@@ -66,7 +66,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,14 +143,14 @@
 .inputGroup input:focus,
 .inputGroup select:focus {
   outline: none;
-  border-color: var(--teal);
+  border-color: var(--primary-500);
   box-shadow: 0 0 0 2px rgba(26, 95, 90, 0.1);
 }
 
 .saveBtn {
   align-self: flex-start;
   padding: 8px 18px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.85rem;
   font-weight: 600;
@@ -159,7 +159,7 @@
 }
 
 .saveBtn:hover {
-  background: var(--teal);
+  background: var(--primary-500);
   transform: translateY(-1px);
 }
 
@@ -227,7 +227,7 @@
 }
 
 .toggle.active {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .toggleHandle {
@@ -278,7 +278,7 @@
   font-size: 0.65rem;
   font-weight: 600;
   padding: 2px 6px;
-  background: var(--teal);
+  background: var(--primary-500);
   color: white;
   border-radius: var(--radius-sm);
   margin-bottom: 2px;
@@ -303,7 +303,7 @@
 
 .planBtn {
   padding: 6px 12px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.8rem;
   font-weight: 500;
@@ -312,7 +312,7 @@
 }
 
 .planBtn:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .planBtnSecondary {
@@ -333,11 +333,11 @@
 
 /* Danger Section */
 .dangerSection {
-  border-color: var(--coral-pale);
+  border-color: rgba(239, 68, 68, 0.1);
 }
 
 .dangerSection h2 {
-  color: var(--coral);
+  color: #ef4444;
 }
 
 .dangerCard {
@@ -352,16 +352,16 @@
   gap: 6px;
   padding: 6px 12px;
   background: white;
-  color: var(--coral);
+  color: #ef4444;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid var(--coral);
+  border: 1px solid #ef4444;
   border-radius: var(--radius-md);
   transition: all 0.2s;
 }
 
 .deleteBtn:hover {
-  background: var(--coral);
+  background: #ef4444;
   color: white;
 }
 

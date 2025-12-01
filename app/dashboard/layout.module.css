@@ -39,13 +39,14 @@
 .logoMark {
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 100%);
-  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-400) 100%);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
 }
 
 .logoText {
@@ -56,7 +57,10 @@
 }
 
 .logoText span {
-  color: var(--teal);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-400) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .closeSidebar {
@@ -109,13 +113,13 @@
 }
 
 .navLinkActive {
-  background: rgba(26, 95, 90, 0.08);
-  color: var(--teal-deep);
+  background: var(--primary-100);
+  color: var(--primary-600);
   font-weight: 600;
 }
 
 .navLinkActive svg {
-  color: var(--teal);
+  color: var(--primary-500);
 }
 
 .activeIndicator {
@@ -125,7 +129,7 @@
   transform: translateY(-50%);
   width: 3px;
   height: 20px;
-  background: var(--teal);
+  background: linear-gradient(180deg, var(--primary-500) 0%, var(--primary-400) 100%);
   border-radius: 0 var(--radius-full) var(--radius-full) 0;
 }
 
@@ -140,9 +144,10 @@
   align-items: center;
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-md);
-  background: linear-gradient(135deg, var(--amber-pale) 0%, rgba(196, 132, 29, 0.12) 100%);
-  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--accent-100) 0%, rgba(249, 115, 22, 0.1) 100%);
+  border-radius: var(--radius-lg);
   margin-bottom: var(--space-sm);
+  border: 1px solid rgba(249, 115, 22, 0.15);
 }
 
 .streakIcon {
@@ -153,7 +158,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--amber);
+  color: var(--accent-500);
   flex-shrink: 0;
 }
 
@@ -277,8 +282,8 @@
 .searchInput:focus {
   outline: none;
   background: white;
-  border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(35, 120, 114, 0.1);
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
 .mobileSearchBtn {
@@ -388,7 +393,7 @@
 .avatar {
   width: 32px;
   height: 32px;
-  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 100%);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-400) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -436,7 +441,7 @@
 .dropdownAvatar {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 100%);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-400) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -538,7 +543,7 @@
 }
 
 .bottomNavActive {
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .bottomNavActive svg {
@@ -552,7 +557,7 @@
   transform: translateX(-50%);
   width: 24px;
   height: 3px;
-  background: var(--teal);
+  background: linear-gradient(90deg, var(--primary-500) 0%, var(--primary-400) 100%);
   border-radius: 0 0 var(--radius-full) var(--radius-full);
 }
 

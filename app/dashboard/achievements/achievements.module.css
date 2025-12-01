@@ -6,7 +6,7 @@
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, var(--amber-pale) 0%, rgba(196, 132, 29, 0.2) 100%);
+  background: linear-gradient(135deg, var(--accent-100) 0%, rgba(196, 132, 29, 0.2) 100%);
   border-radius: var(--radius-xl);
   padding: var(--space-xl);
   margin-bottom: var(--space-xl);
@@ -20,7 +20,7 @@
 }
 
 .headerIcon {
-  color: var(--amber);
+  color: var(--accent-500);
 }
 
 .header h1 {
@@ -84,13 +84,13 @@
 }
 
 .filterBtn:hover {
-  border-color: var(--teal);
-  color: var(--teal);
+  border-color: var(--primary-500);
+  color: var(--primary-500);
 }
 
 .filterBtn.active {
-  background: var(--teal-deep);
-  border-color: var(--teal-deep);
+  background: var(--primary-600);
+  border-color: var(--primary-600);
   color: white;
 }
 
@@ -150,7 +150,7 @@
 }
 
 .unlocked .achievementIcon {
-  background: linear-gradient(135deg, var(--amber-pale) 0%, rgba(196, 132, 29, 0.2) 100%);
+  background: linear-gradient(135deg, var(--accent-100) 0%, rgba(196, 132, 29, 0.2) 100%);
 }
 
 .emoji {
@@ -193,7 +193,7 @@
 
 .progressFill {
   height: 100%;
-  background: var(--teal);
+  background: var(--primary-500);
   border-radius: var(--radius-full);
   transition: width 0.3s ease;
 }

@@ -16,14 +16,14 @@ interface WelcomeModalProps {
 const steps = [
   {
     icon: <GraduationCap size={48} />,
-    title: 'Welcome to TEAS Prep! 🎉',
-    description: 'Your personalized study platform to ace the ATI TEAS exam. Let\'s get you started on your journey to nursing school!',
+    title: 'Welcome to GED Prep! 🎓',
+    description: 'Your personalized study platform to pass the GED exam and earn your high school equivalency credential. Let\'s get you started!',
     color: 'teal'
   },
   {
     icon: <BookOpen size={48} />,
     title: 'Study Smart, Not Hard',
-    description: 'Access comprehensive materials covering all 4 subjects: Reading, Math, Science, and English. Track your progress with detailed analytics.',
+    description: 'Access comprehensive materials covering all 4 subjects: Language Arts, Mathematical Reasoning, Science, and Social Studies.',
     color: 'amber'
   },
   {
@@ -35,7 +35,7 @@ const steps = [
   {
     icon: <Trophy size={48} />,
     title: 'Earn Achievements',
-    description: 'Stay motivated with streaks, XP points, and unlockable achievements. Compete with yourself and track improvements.',
+    description: 'Stay motivated with streaks, XP points, and unlockable achievements. Track your progress and celebrate every milestone.',
     color: 'navy'
   }
 ]
@@ -63,7 +63,7 @@ export function WelcomeModal({ userName = 'there', onComplete }: WelcomeModalPro
 
   useEffect(() => {
     // Check if user has completed onboarding
-    const hasCompletedOnboarding = localStorage.getItem('teas-onboarding-complete')
+    const hasCompletedOnboarding = localStorage.getItem('ged-onboarding-complete')
     if (!hasCompletedOnboarding) {
       setIsOpen(true)
     }
@@ -76,13 +76,13 @@ export function WelcomeModal({ userName = 'there', onComplete }: WelcomeModalPro
   }
 
   const handleComplete = () => {
-    localStorage.setItem('teas-onboarding-complete', 'true')
+    localStorage.setItem('ged-onboarding-complete', 'true')
     setIsOpen(false)
     onComplete?.()
   }
 
   const handleSkip = () => {
-    localStorage.setItem('teas-onboarding-complete', 'true')
+    localStorage.setItem('ged-onboarding-complete', 'true')
     setIsOpen(false)
   }
 
@@ -148,7 +148,7 @@ export function WelcomeModal({ userName = 'there', onComplete }: WelcomeModalPro
                 <h2>Let's personalize your experience</h2>
                 
                 <div className={styles.setupSection}>
-                  <label>When is your TEAS exam?</label>
+                  <label>When is your GED exam?</label>
                   <div className={styles.optionGrid}>
                     {examDates.map(date => (
                       <button

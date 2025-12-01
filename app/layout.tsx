@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'TEAS Prep | Master Your Nursing Entrance Exam',
-  description: 'Comprehensive ATI TEAS test preparation with practice questions, study guides, and personalized learning paths. Join thousands of successful nursing students.',
+  title: 'GED Test Prep | Pass Your High School Equivalency Exam',
+  description: 'Master your GED exam with adaptive practice tests, comprehensive study guides, and personalized learning. Join 100,000+ successful students who earned their diploma.',
+  keywords: 'GED test, GED prep, high school equivalency, GED practice test, GED study guide',
 }
 
 export default function RootLayout({
@@ -17,4 +18,3 @@ export default function RootLayout({
     </html>
   )
 }
-

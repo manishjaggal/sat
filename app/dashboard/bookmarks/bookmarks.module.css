@@ -27,7 +27,7 @@
 }
 
 .header h1 svg {
-  color: var(--teal);
+  color: var(--primary-500);
 }
 
 .header p {
@@ -40,7 +40,7 @@
   align-items: center;
   gap: 6px;
   padding: 10px 16px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.85rem;
   font-weight: 600;
@@ -50,7 +50,7 @@
 }
 
 .practiceAllBtn:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 /* Stats Bar */
@@ -93,8 +93,8 @@
 }
 
 .statusCard.reviewed {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .statusCard.mastered {
@@ -132,10 +132,10 @@
   border: 2px solid transparent;
 }
 
-.subjectPill.reading { background: rgba(26, 95, 90, 0.1); color: var(--teal-deep); }
-.subjectPill.math { background: var(--amber-pale); color: var(--amber); }
-.subjectPill.science { background: var(--coral-pale); color: var(--coral); }
-.subjectPill.english { background: rgba(44, 62, 80, 0.1); color: var(--navy); }
+.subjectPill.reading { background: rgba(26, 95, 90, 0.1); color: var(--primary-600); }
+.subjectPill.math { background: var(--accent-100); color: var(--accent-500); }
+.subjectPill.science { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.subjectPill.english { background: rgba(44, 62, 80, 0.1); color: var(--slate-600); }
 
 .subjectPill.active {
   border-color: currentColor;
@@ -207,8 +207,8 @@
 
 .filterToggle:hover,
 .filterToggle.active {
-  border-color: var(--teal);
-  color: var(--teal);
+  border-color: var(--primary-500);
+  color: var(--primary-500);
 }
 
 .filterToggle .rotated {
@@ -256,7 +256,7 @@
 }
 
 .filterBtn.active {
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
 }
 
@@ -276,11 +276,11 @@
 }
 
 .questionCard:hover {
-  border-color: var(--teal-light);
+  border-color: var(--primary-400);
 }
 
 .questionCard.expanded {
-  border-color: var(--teal);
+  border-color: var(--primary-500);
 }
 
 .cardMain {
@@ -309,10 +309,10 @@
   flex-shrink: 0;
 }
 
-.subjectIcon.teal { background: rgba(26, 95, 90, 0.1); color: var(--teal-deep); }
-.subjectIcon.amber { background: var(--amber-pale); color: var(--amber); }
-.subjectIcon.coral { background: var(--coral-pale); color: var(--coral); }
-.subjectIcon.navy { background: rgba(44, 62, 80, 0.1); color: var(--navy); }
+.subjectIcon.teal { background: rgba(26, 95, 90, 0.1); color: var(--primary-600); }
+.subjectIcon.amber { background: var(--accent-100); color: var(--accent-500); }
+.subjectIcon.coral { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.subjectIcon.navy { background: rgba(44, 62, 80, 0.1); color: var(--slate-600); }
 
 .questionInfo {
   flex: 1;
@@ -352,8 +352,8 @@
 }
 
 .difficultyTag.easy { background: rgba(72, 187, 120, 0.1); color: var(--success); }
-.difficultyTag.medium { background: var(--amber-pale); color: var(--amber); }
-.difficultyTag.hard { background: var(--coral-pale); color: var(--coral); }
+.difficultyTag.medium { background: var(--accent-100); color: var(--accent-500); }
+.difficultyTag.hard { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
 
 .folderTag {
   display: flex;
@@ -384,7 +384,7 @@
 }
 
 .statusBadge.new { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
-.statusBadge.reviewed { background: var(--amber-pale); color: var(--amber); }
+.statusBadge.reviewed { background: var(--accent-100); color: var(--accent-500); }
 .statusBadge.mastered { background: rgba(72, 187, 120, 0.1); color: var(--success); }
 
 .expandIcon {
@@ -410,20 +410,20 @@
   align-items: flex-start;
   gap: var(--space-sm);
   padding: var(--space-sm);
-  background: var(--amber-pale);
+  background: var(--accent-100);
   border-radius: var(--radius-md);
   margin-top: var(--space-sm);
 }
 
 .notesSection svg {
-  color: var(--amber);
+  color: var(--accent-500);
   flex-shrink: 0;
   margin-top: 2px;
 }
 
 .notesSection span {
   font-size: 0.8rem;
-  color: var(--amber);
+  color: var(--accent-500);
   line-height: 1.4;
 }
 
@@ -464,8 +464,8 @@
 }
 
 .statusBtn.active {
-  background: var(--teal-deep);
-  border-color: var(--teal-deep);
+  background: var(--primary-600);
+  border-color: var(--primary-600);
   color: white;
 }
 
@@ -481,8 +481,8 @@
 }
 
 .removeBtn:hover {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 /* Empty State */
@@ -524,7 +524,7 @@
   gap: 6px;
   flex: 1;
   padding: 12px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.85rem;
   font-weight: 600;
@@ -533,13 +533,13 @@
 }
 
 .actionBtn:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .actionBtn.secondary {
   background: white;
-  color: var(--teal-deep);
-  border: 2px solid var(--teal-deep);
+  color: var(--primary-600);
+  border: 2px solid var(--primary-600);
 }
 
 .actionBtn.secondary:hover {

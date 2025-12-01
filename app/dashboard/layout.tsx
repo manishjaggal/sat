@@ -106,7 +106,7 @@ export default function DashboardLayout({
             <div className={styles.logoMark}>
               <GraduationCap size={20} />
             </div>
-            <span className={styles.logoText}>TEAS<span>Prep</span></span>
+            <span className={styles.logoText}>GED<span>Prep</span></span>
           </Link>
           <button 
             className={styles.closeSidebar}

@@ -27,12 +27,13 @@
 .logoMark {
   width: 36px;
   height: 36px;
-  background: var(--teal-deep);
-  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-400) 100%);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
 }
 
 .logoText {
@@ -43,7 +44,10 @@
 }
 
 .logoText span {
-  color: var(--teal);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-400) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .formContent {
@@ -144,8 +148,8 @@
 
 .inputWrapper input:focus {
   outline: none;
-  border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(26, 95, 90, 0.1);
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
 .inputWrapper input::placeholder {
@@ -164,8 +168,8 @@
 
 .inputGroup > input:focus {
   outline: none;
-  border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(26, 95, 90, 0.1);
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
 .eyeBtn {
@@ -251,13 +255,13 @@
 }
 
 .checkbox input:checked + .checkmark {
-  background: var(--teal);
-  border-color: var(--teal);
+  background: var(--primary-500);
+  border-color: var(--primary-500);
 }
 
 .forgotLink {
   font-size: 0.8rem;
-  color: var(--teal);
+  color: var(--primary-600);
   font-weight: 500;
 }
 
@@ -273,20 +277,21 @@
   gap: 8px;
   width: 100%;
   padding: 12px;
-  background: var(--teal-deep);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
   color: white;
   font-size: 0.9rem;
   font-weight: 600;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   transition: all 0.2s;
   margin-top: var(--space-xs);
   min-height: 44px;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
 }
 
 .submitBtn:hover:not(:disabled) {
-  background: var(--teal);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  background: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-400) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
 }
 
 .submitBtn:disabled {
@@ -367,7 +372,7 @@
 }
 
 .terms a {
-  color: var(--teal);
+  color: var(--primary-600);
 }
 
 .terms a:hover {
@@ -377,7 +382,7 @@
 /* Visual Section */
 .visualSection {
   position: relative;
-  background: var(--teal-deep);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -447,7 +452,7 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  color: var(--amber);
+  color: var(--accent-500);
 }
 
 .testimonialCard p {
@@ -468,7 +473,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--teal);
+  background: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-400) 100%);
   color: white;
   display: flex;
   align-items: center;

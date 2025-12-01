@@ -273,7 +273,7 @@ export default function PlannerPage() {
           <div className={styles.countdownNumber}>{daysUntilExam}</div>
           <div className={styles.countdownLabel}>
             <span>days to</span>
-            <strong>TEAS Exam</strong>
+            <strong>GED Exam</strong>
           </div>
         </div>
       </motion.div>

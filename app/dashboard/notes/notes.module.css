@@ -23,7 +23,7 @@
 }
 
 .header h1 svg {
-  color: var(--teal);
+  color: var(--primary-500);
 }
 
 .header > div:first-child p {
@@ -35,7 +35,7 @@
   align-items: center;
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-lg);
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-weight: 600;
   border-radius: var(--radius-lg);
@@ -43,7 +43,7 @@
 }
 
 .newNoteBtn:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 /* Controls */
@@ -93,13 +93,13 @@
 }
 
 .subjectBtn:hover {
-  border-color: var(--teal);
-  color: var(--teal);
+  border-color: var(--primary-500);
+  color: var(--primary-500);
 }
 
 .subjectBtn.active {
-  background: var(--teal-deep);
-  border-color: var(--teal-deep);
+  background: var(--primary-600);
+  border-color: var(--primary-600);
   color: white;
 }
 
@@ -124,8 +124,8 @@
 }
 
 .noteCard.pinned {
-  border-left: 4px solid var(--amber);
-  background: linear-gradient(135deg, white 0%, var(--amber-pale) 100%);
+  border-left: 4px solid var(--accent-500);
+  background: linear-gradient(135deg, white 0%, var(--accent-100) 100%);
 }
 
 .noteHeader {
@@ -145,22 +145,22 @@
 
 .subjectBadge.teal {
   background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .subjectBadge.amber {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .subjectBadge.coral {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .subjectBadge.navy {
   background: rgba(44, 62, 80, 0.1);
-  color: var(--navy);
+  color: var(--slate-600);
 }
 
 .subjectBadge.gray {
@@ -192,8 +192,8 @@
 }
 
 .deleteBtn:hover {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .noteCard h3 {
@@ -396,7 +396,7 @@
 }
 
 .tagInput button:hover {
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
 }
 
@@ -411,7 +411,7 @@
   align-items: center;
   gap: var(--space-xs);
   padding: var(--space-xs) var(--space-sm);
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   border-radius: var(--radius-full);
   font-size: 0.8rem;
@@ -453,7 +453,7 @@
   align-items: center;
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-lg);
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-weight: 600;
   border-radius: var(--radius-md);
@@ -461,7 +461,7 @@
 }
 
 .saveBtn:hover:not(:disabled) {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .saveBtn:disabled {

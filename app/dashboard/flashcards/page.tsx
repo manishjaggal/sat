@@ -34,13 +34,13 @@ const flashcardDecks = {
     icon: <MessageSquare size={18} />,
     color: 'navy',
   },
-  medicalTerms: {
-    ...importedDecks.medicalTerms,
+  socialStudies: {
+    ...importedDecks.socialStudies,
     icon: <Stethoscope size={18} />,
     color: 'purple',
   },
-  anatomy: {
-    ...importedDecks.anatomy,
+  government: {
+    ...importedDecks.government,
     icon: <Heart size={18} />,
     color: 'red',
   }

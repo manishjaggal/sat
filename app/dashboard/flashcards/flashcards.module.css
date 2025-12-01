@@ -60,10 +60,10 @@
 }
 
 /* Deck Color Variants */
-.deckCard.teal .deckIcon { background: rgba(26, 95, 90, 0.1); color: var(--teal-deep); }
-.deckCard.amber .deckIcon { background: var(--amber-pale); color: var(--amber); }
-.deckCard.coral .deckIcon { background: var(--coral-pale); color: var(--coral); }
-.deckCard.navy .deckIcon { background: rgba(44, 62, 80, 0.1); color: var(--navy); }
+.deckCard.teal .deckIcon { background: rgba(26, 95, 90, 0.1); color: var(--primary-600); }
+.deckCard.amber .deckIcon { background: var(--accent-100); color: var(--accent-500); }
+.deckCard.coral .deckIcon { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.deckCard.navy .deckIcon { background: rgba(44, 62, 80, 0.1); color: var(--slate-600); }
 .deckCard.purple .deckIcon { background: rgba(139, 92, 246, 0.1); color: #7c3aed; }
 .deckCard.red .deckIcon { background: rgba(239, 68, 68, 0.1); color: #dc2626; }
 
@@ -92,10 +92,10 @@
   font-weight: 600;
 }
 
-.deckCard.teal .deckAction { color: var(--teal-deep); background: rgba(26, 95, 90, 0.08); }
-.deckCard.amber .deckAction { color: var(--amber); background: var(--amber-pale); }
-.deckCard.coral .deckAction { color: var(--coral); background: var(--coral-pale); }
-.deckCard.navy .deckAction { color: var(--navy); background: rgba(44, 62, 80, 0.08); }
+.deckCard.teal .deckAction { color: var(--primary-600); background: rgba(26, 95, 90, 0.08); }
+.deckCard.amber .deckAction { color: var(--accent-500); background: var(--accent-100); }
+.deckCard.coral .deckAction { color: #ef4444; background: rgba(239, 68, 68, 0.1); }
+.deckCard.navy .deckAction { color: var(--slate-600); background: rgba(44, 62, 80, 0.08); }
 .deckCard.purple .deckAction { color: #7c3aed; background: rgba(139, 92, 246, 0.08); }
 .deckCard.red .deckAction { color: #dc2626; background: rgba(239, 68, 68, 0.08); }
 
@@ -126,7 +126,7 @@
 }
 
 .tipItem svg {
-  color: var(--teal);
+  color: var(--primary-500);
   width: 20px;
   height: 20px;
   margin-bottom: 4px;
@@ -187,10 +187,10 @@
   font-size: 0.8rem;
 }
 
-.deckBadge.teal { background: rgba(26, 95, 90, 0.1); color: var(--teal-deep); }
-.deckBadge.amber { background: var(--amber-pale); color: var(--amber); }
-.deckBadge.coral { background: var(--coral-pale); color: var(--coral); }
-.deckBadge.navy { background: rgba(44, 62, 80, 0.1); color: var(--navy); }
+.deckBadge.teal { background: rgba(26, 95, 90, 0.1); color: var(--primary-600); }
+.deckBadge.amber { background: var(--accent-100); color: var(--accent-500); }
+.deckBadge.coral { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.deckBadge.navy { background: rgba(44, 62, 80, 0.1); color: var(--slate-600); }
 .deckBadge.purple { background: rgba(139, 92, 246, 0.1); color: #7c3aed; }
 .deckBadge.red { background: rgba(239, 68, 68, 0.1); color: #dc2626; }
 
@@ -223,8 +223,8 @@
 }
 
 .statPill.review {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .statPill:last-child {
@@ -279,7 +279,7 @@
 
 .cardBack {
   transform: rotateY(180deg);
-  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 100%);
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-500) 100%);
   color: white;
   border: none;
 }
@@ -344,12 +344,12 @@
 }
 
 .reviewBtn {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .reviewBtn:hover:not(:disabled) {
-  background: var(--coral);
+  background: #ef4444;
   color: white;
 }
 
@@ -435,7 +435,7 @@
 
 .progressFill {
   height: 100%;
-  background: var(--teal);
+  background: var(--primary-500);
   border-radius: var(--radius-full);
   transition: width 0.3s ease;
 }
@@ -472,7 +472,7 @@
   opacity: 0.6;
 }
 
-.swipeHint span:first-child { color: var(--coral); }
+.swipeHint span:first-child { color: #ef4444; }
 .swipeHint span:last-child { color: #4ade80; }
 
 /* Session Complete */
@@ -490,7 +490,7 @@
   width: 80px;
   height: 80px;
   margin: 0 auto var(--space-md);
-  background: linear-gradient(135deg, var(--amber) 0%, #f59e0b 100%);
+  background: linear-gradient(135deg, var(--accent-500) 0%, #f59e0b 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -529,7 +529,7 @@
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .completeStats .statLabel {
@@ -538,11 +538,11 @@
 }
 
 .completeStat:nth-child(2) .statNumber {
-  color: var(--coral);
+  color: #ef4444;
 }
 
 .completeStat:nth-child(3) .statNumber {
-  color: var(--amber);
+  color: var(--accent-500);
 }
 
 .completeDetails {
@@ -561,7 +561,7 @@
 }
 
 .detailItem svg {
-  color: var(--teal);
+  color: var(--primary-500);
 }
 
 .completeActions {
@@ -576,7 +576,7 @@
   justify-content: center;
   gap: 8px;
   padding: 12px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-weight: 600;
   font-size: 0.9rem;
@@ -585,7 +585,7 @@
 }
 
 .primaryBtn:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .secondaryBtn {

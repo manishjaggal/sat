@@ -49,10 +49,10 @@
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
-.heroCard.teal::before { background: var(--teal); }
-.heroCard.amber::before { background: var(--amber); }
-.heroCard.coral::before { background: var(--coral); }
-.heroCard.navy::before { background: var(--navy); }
+.heroCard.teal::before { background: var(--primary-500); }
+.heroCard.amber::before { background: var(--accent-500); }
+.heroCard.coral::before { background: #ef4444; }
+.heroCard.navy::before { background: var(--slate-600); }
 
 .heroIcon {
   width: 72px;
@@ -66,22 +66,22 @@
 
 .heroCard.teal .heroIcon {
   background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .heroCard.amber .heroIcon {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .heroCard.coral .heroIcon {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .heroCard.navy .heroIcon {
   background: rgba(44, 62, 80, 0.1);
-  color: var(--navy);
+  color: var(--slate-600);
 }
 
 .heroContent {
@@ -142,15 +142,15 @@
 
 .progressCircle .progressValue {
   fill: none;
-  stroke: var(--teal);
+  stroke: var(--primary-500);
   stroke-width: 6;
   stroke-linecap: round;
   transition: stroke-dashoffset 0.5s ease;
 }
 
-.heroCard.amber .progressValue { stroke: var(--amber); }
-.heroCard.coral .progressValue { stroke: var(--coral); }
-.heroCard.navy .progressValue { stroke: var(--navy); }
+.heroCard.amber .progressValue { stroke: var(--accent-500); }
+.heroCard.coral .progressValue { stroke: #ef4444; }
+.heroCard.navy .progressValue { stroke: var(--slate-600); }
 
 .progressCircle span {
   position: absolute;
@@ -205,17 +205,17 @@
 
 .actionIcon.teal {
   background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .actionIcon.amber {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .actionIcon.coral {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .actionCard div:nth-child(2) {
@@ -274,7 +274,7 @@
 .moduleNumber {
   width: 36px;
   height: 36px;
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   border-radius: var(--radius-md);
   display: flex;
@@ -319,7 +319,7 @@
 
 .moduleProgress .progressFill {
   height: 100%;
-  background: var(--teal);
+  background: var(--primary-500);
   border-radius: var(--radius-full);
 }
 
@@ -403,7 +403,7 @@
 
 .startLesson {
   padding: var(--space-sm) var(--space-md);
-  background: var(--teal-deep);
+  background: var(--primary-600);
   color: white;
   font-size: 0.85rem;
   font-weight: 500;
@@ -417,7 +417,7 @@
 }
 
 .startLesson:hover {
-  background: var(--teal);
+  background: var(--primary-500);
 }
 
 .lessonItem.completed .startLesson:hover {
@@ -432,7 +432,7 @@
   gap: var(--space-sm);
   padding: var(--space-md);
   background: rgba(26, 95, 90, 0.08);
-  color: var(--teal-deep);
+  color: var(--primary-600);
   font-weight: 500;
   border-radius: var(--radius-md);
   transition: all 0.2s;
@@ -451,12 +451,12 @@
   display: flex;
   gap: var(--space-lg);
   padding: var(--space-lg);
-  background: linear-gradient(135deg, var(--amber-pale) 0%, rgba(196, 132, 29, 0.15) 100%);
+  background: linear-gradient(135deg, var(--accent-100) 0%, rgba(196, 132, 29, 0.15) 100%);
   border-radius: var(--radius-lg);
 }
 
 .tipCard svg {
-  color: var(--amber);
+  color: var(--accent-500);
   flex-shrink: 0;
 }
 

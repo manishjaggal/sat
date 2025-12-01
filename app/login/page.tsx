@@ -47,7 +47,7 @@ export default function LoginPage() {
             <div className={styles.logoMark}>
               <GraduationCap size={20} />
             </div>
-            <span className={styles.logoText}>TEAS<span>Prep</span></span>
+            <span className={styles.logoText}>GED<span>Prep</span></span>
           </Link>
 
           <div className={styles.formContent}>
@@ -63,8 +63,8 @@ export default function LoginPage() {
                   <h1>{isLogin ? 'Welcome back' : 'Create account'}</h1>
                   <p>
                     {isLogin 
-                      ? 'Continue your nursing journey' 
-                      : 'Start your path to TEAS success'
+                      ? 'Continue your learning journey' 
+                      : 'Start your path to GED success'
                     }
                   </p>
                 </motion.div>
@@ -277,12 +277,12 @@ export default function LoginPage() {
 
             <div className={styles.testimonialCard}>
               <Sparkles className={styles.quoteIcon} size={20} />
-              <p>"TEAS Prep helped me score in the top 10%. The practice questions were incredibly accurate!"</p>
+              <p>"GED Prep helped me pass on my first try. The practice questions were incredibly accurate!"</p>
               <div className={styles.testimonialAuthor}>
                 <div className={styles.avatar}>JC</div>
                 <div>
                   <strong>Jessica Chen</strong>
-                  <span>UCLA Nursing</span>
+                  <span>GED Graduate</span>
                 </div>
               </div>
             </div>

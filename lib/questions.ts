@@ -1,4 +1,4 @@
-// Comprehensive TEAS Question Bank - 300+ Questions
+// Comprehensive GED Question Bank - 300+ Questions
 
 import { extendedReadingQuestions } from './reading-questions';
 import { extendedMathQuestions } from './math-questions';
@@ -1817,35 +1817,35 @@ export const getWeakAreaQuestions = (count: number) => {
   return shuffled.slice(0, count);
 };
 
-// Subject info
+// Subject info - GED Test Structure
 export const subjectInfo = {
   reading: {
-    name: 'Reading',
+    name: 'Reasoning Through Language Arts',
     totalQuestions: allReadingQuestions.length,
-    topics: ['Key Ideas & Details', 'Craft & Structure', 'Integration of Knowledge'],
-    examPercentage: 39,
-    timeMinutes: 55
+    topics: ['Key Ideas & Details', 'Craft & Structure', 'Integration of Knowledge', 'Extended Response'],
+    examPercentage: 25,
+    timeMinutes: 150
   },
   math: {
-    name: 'Mathematics',
+    name: 'Mathematical Reasoning',
     totalQuestions: allMathQuestions.length,
-    topics: ['Numbers & Operations', 'Algebra', 'Measurement', 'Data Interpretation', 'Ratios & Proportions', 'Percentages', 'Fractions', 'Decimals'],
+    topics: ['Quantitative Reasoning', 'Algebraic Reasoning', 'Geometry', 'Data Analysis', 'Number Operations'],
     examPercentage: 25,
-    timeMinutes: 54
+    timeMinutes: 115
   },
   science: {
     name: 'Science',
     totalQuestions: allScienceQuestions.length,
-    topics: ['Human Anatomy', 'Life Science', 'Earth & Physical Science', 'Scientific Reasoning'],
-    examPercentage: 31,
-    timeMinutes: 63
+    topics: ['Life Science', 'Physical Science', 'Earth & Space Science', 'Scientific Practices'],
+    examPercentage: 25,
+    timeMinutes: 90
   },
   english: {
-    name: 'English & Language Usage',
+    name: 'Social Studies',
     totalQuestions: allEnglishQuestions.length,
-    topics: ['Grammar', 'Vocabulary', 'Sentence Structure', 'Punctuation', 'Spelling'],
-    examPercentage: 22,
-    timeMinutes: 28
+    topics: ['U.S. History', 'Civics & Government', 'Economics', 'Geography & World'],
+    examPercentage: 25,
+    timeMinutes: 70
   }
 };
 

@@ -47,10 +47,10 @@ const subjects = [
 ]
 
 const motivationalQuotes = [
-  { quote: "Every question you practice is one step closer to your nursing dream!", emoji: "🎯" },
+  { quote: "Every question you practice is one step closer to your diploma!", emoji: "🎯" },
   { quote: "You're doing amazing! Keep that momentum going!", emoji: "🚀" },
   { quote: "Success is the sum of small efforts repeated daily.", emoji: "✨" },
-  { quote: "The TEAS exam won't know what hit it!", emoji: "💪" },
+  { quote: "The GED exam won't know what hit it!", emoji: "💪" },
   { quote: "Believe in yourself - you've got this!", emoji: "⭐" },
 ]
 
@@ -268,7 +268,7 @@ export default function DashboardHome() {
               <div className={styles.continueContent}>
                 <span className={styles.continueLabel}>Mathematics</span>
                 <h3>Ratios and Proportions</h3>
-                <p>Learn to solve ratio problems commonly found in TEAS.</p>
+                <p>Learn to solve ratio problems commonly found on the GED.</p>
                 <div className={styles.continueProgress}>
                   <div className={styles.progressBar}>
                     <div className={styles.progressFill} style={{ width: '65%' }} />

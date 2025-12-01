@@ -90,7 +90,7 @@
 
 .scoreFill {
   fill: none;
-  stroke: var(--teal);
+  stroke: var(--primary-500);
   stroke-width: 8;
   stroke-linecap: round;
   transition: stroke-dasharray 1s ease;
@@ -164,7 +164,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .quickStatInfo strong {
@@ -211,7 +211,7 @@
 }
 
 .weakIcon {
-  color: var(--coral);
+  color: #ef4444;
 }
 
 .strongIcon {
@@ -219,7 +219,7 @@
 }
 
 .awardIcon {
-  color: var(--amber);
+  color: var(--accent-500);
 }
 
 /* Chart */
@@ -253,7 +253,7 @@
 .bar {
   width: 70%;
   max-width: 32px;
-  background: linear-gradient(180deg, var(--teal) 0%, var(--teal-light) 100%);
+  background: linear-gradient(180deg, var(--primary-500) 0%, var(--primary-400) 100%);
   border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   position: relative;
   min-height: 16px;
@@ -300,22 +300,22 @@
 
 .subjectIcon.teal {
   background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .subjectIcon.amber {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .subjectIcon.coral {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 .subjectIcon.navy {
   background: rgba(44, 62, 80, 0.1);
-  color: var(--navy);
+  color: var(--slate-600);
 }
 
 .subjectInfo {
@@ -354,20 +354,20 @@
 
 .subjectFill {
   height: 100%;
-  background: var(--teal);
+  background: var(--primary-500);
   border-radius: var(--radius-full);
 }
 
 .subjectItem:nth-child(2) .subjectFill {
-  background: var(--amber);
+  background: var(--accent-500);
 }
 
 .subjectItem:nth-child(3) .subjectFill {
-  background: var(--coral);
+  background: #ef4444;
 }
 
 .subjectItem:nth-child(4) .subjectFill {
-  background: var(--navy);
+  background: var(--slate-600);
 }
 
 .subjectMeta {
@@ -452,7 +452,7 @@
 
 .milestoneFill {
   height: 100%;
-  background: var(--amber);
+  background: var(--accent-500);
   border-radius: var(--radius-full);
 }
 
@@ -517,8 +517,8 @@
 }
 
 .testTrend.down {
-  background: var(--coral-pale);
-  color: var(--coral);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
 }
 
 /* Areas Lists */
@@ -557,7 +557,7 @@
 }
 
 .areaScore .weak {
-  color: var(--coral);
+  color: #ef4444;
 }
 
 .areaScore .strong {
@@ -572,7 +572,7 @@
   width: 100%;
   padding: 10px;
   margin-top: var(--space-sm);
-  background: var(--coral);
+  background: #ef4444;
   color: white;
   font-weight: 600;
   font-size: 0.8rem;
@@ -587,7 +587,7 @@
 
 /* Achievements */
 .achievementSection {
-  background: linear-gradient(135deg, var(--amber-pale) 0%, rgba(196, 132, 29, 0.15) 100%);
+  background: linear-gradient(135deg, var(--accent-100) 0%, rgba(196, 132, 29, 0.15) 100%);
   border: 1px solid rgba(196, 132, 29, 0.2);
   border-radius: var(--radius-lg);
   padding: var(--space-md);
@@ -625,12 +625,12 @@
 
 .achievementBadge.target {
   background: rgba(26, 95, 90, 0.1);
-  color: var(--teal-deep);
+  color: var(--primary-600);
 }
 
 .achievementBadge.brain {
-  background: var(--amber-pale);
-  color: var(--amber);
+  background: var(--accent-100);
+  color: var(--accent-500);
 }
 
 .achievement span {

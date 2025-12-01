@@ -124,13 +124,13 @@ Body → Vena Cava → Right Atrium → Right Ventricle → Pulmonary Artery →
    - The patient *is* waiting.
 
 2. **Compound subjects with AND** take plural verbs
-   - The doctor and nurse *are* here.
+   - The teacher and student *are* here.
 
 3. **Collective nouns** usually take singular verbs
    - The group *is* meeting.
 
 4. **Neither/Either...nor/or** - verb agrees with closest noun
-   - Neither the nurses nor the doctor *is* available.
+   - Neither the students nor the teacher *is* available.
 
 5. **Indefinite pronouns** (everyone, each, nobody) are singular
    - Everyone *needs* to sign in.
